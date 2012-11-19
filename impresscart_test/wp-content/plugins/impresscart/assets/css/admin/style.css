@@ -387,5 +387,19 @@ div.impresscart_header h1.theme-title
 	padding-left:260px;	
 }
 
+/* style Form Add Currency*/
+.ad-logo{width:290px; float:left;}
+.add-currency{width:500px;}
+.row{clear:both; float:left; width:100%;}
+#frm-add-currency .row{margin:4px 0; }
+#frm-add-currency label{width:100%; float:left; clear:both;}
+#frm-add-currency  input.text{background:#fff;}
+.head-tabs{width:100%; clear:both; float:left;}
+#frm-add-currency select option{width:100px;}
+#frm-add-currency .r-left{width:50%; float:left;}
+#frm-add-currency .r-left span{font-size:11px; color:#d0d0d0;}
+#frm-add-currency  .im-submit{background:#fff; border-radius:12px; padding:5px 10px; border:1px solid #d0d0d0;}
+/* End style Form Add Currency */
 
 /* End Add New Style for Admin*/
+

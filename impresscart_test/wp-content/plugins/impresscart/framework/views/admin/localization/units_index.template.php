@@ -1,8 +1,5 @@
-<div class="impresscart_header">
-<h1 class="theme-title"><?php echo __('Measurement Units');?></h1>
-</div>
 <?php 
-	echo Goscom::generateMenu($pages, 2);
+	echo Goscom::generateHeader($pages);
 ?>
 <div class="wrap">
 	<h2>

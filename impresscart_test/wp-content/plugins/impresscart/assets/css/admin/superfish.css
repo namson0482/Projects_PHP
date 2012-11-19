@@ -10,8 +10,8 @@
 }
 .sf-menu ul {
 	position:		absolute;
-	top:			-999em;
-	width:			10em; /* left offset of submenus need to match (see below) */
+	display:none;
+	width:			15em; /* left offset of submenus need to match (see below) */
 	
 }
 .sf-menu ul li {
@@ -30,16 +30,18 @@
 .sf-menu a {
 	display:		block;
 	position:		relative;
+	text-transform:capitalize;
 }
 .sf-menu li:hover ul,
 .sf-menu li.sfHover ul {
 	left:			0;
-	top:			2.5em; /* match top ul list item height */
+	top:			43px; /* match top ul list item height */
 	z-index:		99;
+	display:block;
 }
 ul.sf-menu li:hover li ul,
 ul.sf-menu li.sfHover li ul {
-	top:			-999em;
+	/*top:			-999em;*/
 }
 ul.sf-menu li li:hover ul,
 ul.sf-menu li li.sfHover ul {
@@ -47,8 +49,7 @@ ul.sf-menu li li.sfHover ul {
 	top:			0;
 }
 ul.sf-menu li li:hover li ul,
-ul.sf-menu li li.sfHover li ul {
-	top:			-999em;
+ul.sf-menu li li.sfHover li ul {	
 }
 ul.sf-menu li li li:hover ul,
 ul.sf-menu li li li.sfHover ul {
@@ -64,24 +65,49 @@ ul.sf-menu li li li.sfHover ul {
 .sf-menu a {
 	border-left:	1px solid #fff;
 	border-top:		1px solid #EBEBEB; /* #CFDEFF;*/
-	padding: 		.75em 1em;
+	padding: 		15px 1em;
+	height:30px;
 	text-decoration:none;
+	text-decoration:none;
+	font-weight:bold;
 }
+.sf-menu ul li a 
+{
+	height:23px;
+	padding:0 1em;
+	border:none;
+}
+.sf-menu  ul li  a{
+	font-weight:normal;
+} 
 .sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
 	color:			#13a;
+	
 }
 .sf-menu li {
-	background:		#F5F5F5;		/* #BDD2FF; */ /**/
+	/*background:		#F5F5F5;		/* #BDD2FF; */ /**/
 }
 .sf-menu li li {
-	background:		#FFFFFF;
+	/*background:		#FFFFFF;*/
 			/* #F5F5F5 */
 }
-
+.sf-menu li.current{height:43px;}
+.sf-menu li.current ul li{height:27px;}
+.sf-menu li.current:hover{
+	background:url('../../images/current-menu.png') bottom center no-repeat;
+	}
+	color:
+.sf-menu li.current ul a:hover{background-image:none;}
+.sf-menu li.current ul a:hover{
+	background:none;	
+}
+.sf-menu li.current a:hover{
+	color:#F15D28;
+	
+}
 .sf-menu > li > ul {
 			
-		background: #fff url('triangle_grey.png') 13% 0% no-repeat ;
-		padding-top: 10px;	
+		background: #fff  ;	
 }
 
 .sf-menu > li > ul > li.sfHover:first-child {
@@ -94,7 +120,7 @@ ul.sf-menu li li li.sfHover ul {
 }
 .sf-menu li:hover, .sf-menu li.sfHover,
 .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
-	background:		#EBEBEB;		/**/
+	/*background:		#EBEBEB;		*/
 	outline:		0;
 	
 }
@@ -156,5 +182,4 @@ li.sfHover > a > .sf-sub-indicator {
 .test_ul {
 	background-image: url('triangle_grey.png') no-repeat ;
 }
-
 

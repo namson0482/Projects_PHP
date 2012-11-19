@@ -1,12 +1,8 @@
-<div class="impresscart_header">
-	<h1 class="theme-title">
-	<?php echo $heading;?>
-	</h1>
-</div>
 <?php 
-	echo Goscom::generateMenu($pages);
+	echo Goscom::generateHeader($pages);
 ?>
 <div class="content">
+	<br>
 	<div class="wrap">
 		<table class="wp-list-table widefat fixed pages" cellspacing="0">
 		<thead>

@@ -1,12 +1,6 @@
-<div class="impresscart_header">
-<h1 class="theme-title"><?php echo __('Impress Cart Payment Gateways');?></h1>
-</div>
 <?php 
-echo '<div>';
-echo Goscom::generateMenu($pages);
-echo '</div>';
+	echo Goscom::generateHeader($pages);
 ?>
-
 <div class="wrap">
 	<table class="wp-list-table widefat fixed pages" cellspacing="0">
 		<thead>

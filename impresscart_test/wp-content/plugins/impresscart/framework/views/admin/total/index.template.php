@@ -1,20 +1,17 @@
-<div class="impresscart_header">
-	<h1 class="theme-title">
-	<?php echo __('Impress Cart Order Total Detail');?>
-	</h1>
-</div>
-	<?php if ($success) { ?>
-<div class="success">
-<?php echo $success; ?>
-</div>
-<?php } ?>
-<?php if ($error) { ?>
-<div class="warning">
-<?php echo $error; ?>
-</div>
-<?php }
-echo Goscom::generateMenu($pages);
+<?php 
+	echo Goscom::generateHeader($pages);
 ?>
+
+
+<?php 
+if ($success) { 
+	echo '<div class="warning">' . $success . '</div>';
+}
+if ($error) {
+	echo '<div class="warning">' . $error . '</div>';
+}
+?>
+
 <div class="wrap">
 <div>
 	<table class="wp-list-table widefat fixed pages" cellspacing="0">
@@ -65,6 +62,5 @@ echo Goscom::generateMenu($pages);
 			</tr>
 		</tfoot>
 	</table>
-
 </div>
 </div>

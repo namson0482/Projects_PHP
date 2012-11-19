@@ -1,11 +1,6 @@
-<div class="impresscart_header">
-	<h1 class="theme-title">
-	<?php echo __('Currency Management');?>
-	</h1>
-</div>
-	<?php
-	echo Goscom::generateMenu($pages, 2);
-	?>
+<?php 
+	echo Goscom::generateHeader($pages);
+?>
 <div class="wrap">
 	<h2>
 		<a class="add-new-h2"

@@ -1,11 +1,6 @@
-<div class="impresscart_header">
-	<h1 class="theme-title">
-	<?php echo $heading;?>
-	</h1>
-</div>
-	<?php
-		echo Goscom::generateMenu($pages);
-	?>
+<?php 
+	echo Goscom::generateHeader($pages);
+?>
 
 <div class="content">
 	<div class="wrap">

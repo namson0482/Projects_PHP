@@ -1,13 +1,8 @@
-<div class="impresscart_header">
-	<h1 class="theme-title">
-	<?php echo $heading;?>
-	</h1>
-</div>
 <?php 
-	echo Goscom::generateMenu($pages);
+	echo Goscom::generateHeader($pages);
 ?>
 <div class="content">
-
+	<br>
 	<table class="form">
 		<tr>
 			<td><?php echo $entry_date_start; ?> <input type="text"

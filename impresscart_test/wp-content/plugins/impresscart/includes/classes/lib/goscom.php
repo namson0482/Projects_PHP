@@ -77,11 +77,15 @@ class Goscom {
 	}
 	
 	
-	public static function generateHeader($logo, $pages) {
-		$html = '<div>';
-		$html .= '<img src=' . $logo .'>'; 
-		$html .= self::generateMenu($pages);
-		$html .= '</div>';
+	public static function generateHeader($pages) {
+		
+		$logo = IMPRESSCART_IMAGES . "/" . "impresscart_logo.png";
+		
+		$html = '<div class="head-tabs"><div class="ad-logo">';
+		$html .= '<img align="left"  src=' . $logo .'></div>';
+		$html .='<div class="tabs-right">'; 
+		$html .= self::generateMenu($pages);		
+		$html .= '</div></div>';
 		return $html; 
 	}
 	
