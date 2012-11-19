@@ -1,0 +1,149 @@
+<?php
+class impresscart_report_product_purchased_controller extends impresscart_framework_controller { 
+	public function index() {   
+		$this->load->language('report/product_purchased');
+
+		$this->document->setTitle($this->language->get('heading_title'));
+		
+		if (isset($_GET['filter_date_start'])) {
+			$filter_date_start = $_GET['filter_date_start'];
+		} else {
+			$filter_date_start = '';
+		}
+
+		if (isset($_GET['filter_date_end'])) {
+			$filter_date_end = $_GET['filter_date_end'];
+		} else {
+			$filter_date_end = '';
+		}
+		
+		if (isset($_GET['filter_order_status_id'])) {
+			$filter_order_status_id = $_GET['filter_order_status_id'];
+		} else {
+			$filter_order_status_id = 0;
+		}	
+						
+		if (isset($_GET['page'])) {
+			$page = $_GET['page'];
+		} else {
+			$page = 1;
+		}
+
+		$url = '';
+						
+		if (isset($_GET['filter_date_start'])) {
+			$url .= '&filter_date_start=' . $_GET['filter_date_start'];
+		}
+		
+		if (isset($_GET['filter_date_end'])) {
+			$url .= '&filter_date_end=' . $_GET['filter_date_end'];
+		}
+		
+		if (isset($_GET['filter_order_status_id'])) {
+			$url .= '&filter_order_status_id=' . $_GET['filter_order_status_id'];
+		}
+								
+		if (isset($_GET['page'])) {
+			$url .= '&page=' . $_GET['page'];
+		}
+
+   		$this->data['breadcrumbs'] = array();
+
+   		$this->data['breadcrumbs'][] = array(
+       		'text'      => $this->language->get('text_home'),
+			'href'      => $this->url->link('common/home', 'token=' . $this->session->data['token'], 'SSL'),
+      		'separator' => false
+   		);
+
+   		$this->data['breadcrumbs'][] = array(
+       		'text'      => $this->language->get('heading_title'),
+			'href'      => $this->url->link('report/product_purchased', 'token=' . $this->session->data['token'] . $url, 'SSL'),
+      		'separator' => ' :: '
+   		);		
+		
+		$this->load->model('report/product');
+		
+		$this->data['products'] = array();
+		
+		$data = array(
+			'filter_date_start'	     => $filter_date_start, 
+			'filter_date_end'	     => $filter_date_end, 
+			'filter_order_status_id' => $filter_order_status_id,
+			'start'                  => ($page - 1) * $this->config->get('config_admin_limit'),
+			'limit'                  => $this->config->get('config_admin_limit')
+		);
+				
+		$product_total = $this->model_report_product->getTotalPurchased($data);
+
+		$results = $this->model_report_product->getPurchased($data);
+		
+		foreach ($results as $result) {
+			$this->data['products'][] = array(
+				'name'       => $result['name'],
+				'model'      => $result['model'],
+				'quantity'   => $result['quantity'],
+				'total'      => $this->currency->format($result['total'], $this->config->get('config_currency'))
+			);
+		}
+				
+		$this->data['heading'] = $this->language->get('heading_title');
+		
+		$this->data['text_no_results'] = $this->language->get('text_no_results');
+		$this->data['text_all_status'] = $this->language->get('text_all_status');
+		
+		$this->data['column_name'] = $this->language->get('column_name');
+		$this->data['column_model'] = $this->language->get('column_model');
+		$this->data['column_quantity'] = $this->language->get('column_quantity');
+		$this->data['column_total'] = $this->language->get('column_total');
+		
+		$this->data['entry_date_start'] = $this->language->get('entry_date_start');
+		$this->data['entry_date_end'] = $this->language->get('entry_date_end');
+		$this->data['entry_status'] = $this->language->get('entry_status');
+
+		$this->data['button_filter'] = $this->language->get('button_filter');
+		
+		$this->data['token'] = $this->session->data['token'];
+		
+		$this->load->model('localisation/order_status');
+		
+		$this->data['order_statuses'] = $this->model_localisation_order_status->getOrderStatuses();
+		
+		$url = '';
+						
+		if (isset($_GET['filter_date_start'])) {
+			$url .= '&filter_date_start=' . $_GET['filter_date_start'];
+		}
+		
+		if (isset($_GET['filter_date_end'])) {
+			$url .= '&filter_date_end=' . $_GET['filter_date_end'];
+		}
+
+		if (isset($_GET['filter_order_status_id'])) {
+			$url .= '&filter_order_status_id=' . $_GET['filter_order_status_id'];
+		}
+		
+		$pagination = new Pagination();
+		$pagination->total = $product_total;
+		$pagination->page = $page;
+		$pagination->limit = $this->config->get('config_admin_limit');
+		$pagination->text = $this->language->get('text_pagination');
+		$pagination->url = $this->url->link('report/product_purchased', 'token=' . $this->session->data['token'] . $url . '&page={page}');
+			
+		$this->data['pagination'] = $pagination->render();		
+		
+		$this->data['filter_date_start'] = $filter_date_start;
+		$this->data['filter_date_end'] = $filter_date_end;		
+		$this->data['filter_order_status_id'] = $filter_order_status_id;
+		
+		$this->template = 'report/product_purchased.tpl';
+		$this->children = array(
+			'common/header',
+			'common/footer'
+		);
+
+		$this->data['pages'] = apply_filters('impresscart_administration_pages', array());
+		
+		//$this->response->setOutput($this->render());
+	}	
+}
+?>

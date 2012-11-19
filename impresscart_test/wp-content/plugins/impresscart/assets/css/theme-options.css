@@ -1,0 +1,241 @@
+/*
+Copyright 2010-2011 Impress Dev LLC. This software is distributed under the GNU General Public License version 2. 
+
+Contact: support@impressdev.com
+*/
+.fix-clear {
+	clear: both;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+html[xmlns] .clearfix {
+	display: block;
+}
+* html .clearfix {
+	height: 1%;
+}
+h1.theme-title {
+	font: 24px Georgia,"Times New Roman","Bitstream Charter", Times, serif;
+}
+#save_options, #save-button, .blue_button {
+	font-size: 20px;
+	background: #1c94c4;
+	margin-top: 10px;
+	padding: 5px 10px;
+	color: #FFF;
+}
+#save_options_fixed {
+	font-size: 20px;
+	background: #1c94c4;
+	margin-top: 10px;
+	padding: 5px 10px;
+	color: #FFF;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	width: 150px;
+}
+#theme-options {
+	font-size: 12px;
+}
+.slider-wrapper {
+	float: left;
+	width: 255px;
+}
+
+/* Group Option CSS */
+.group_option {
+	float: left;
+	clear: both;
+	margin: 8px 0;
+	width: 100%;
+	border-bottom: 1px dotted #B6AC80;
+	padding-bottom: 5px;
+}
+.group_option .group_label {
+	float: left;
+	font-size: 16px;
+	font-weight: normal;
+	color: #6C6750;
+}
+.group_option a {
+	display: block;
+	float: left;
+	background: #DCD7BC;
+	color: #666666;
+	margin-left: 10px;
+	text-align: center;
+	text-decoration: none;
+	font: 12px "Lucida Grande","Lucida Sans Unicode",Tahoma,Verdana,sans-serif;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+}
+.group_option a.active {
+	background: #EC902D;
+	color: #FFFFFF;
+}
+.group_options {
+	display: none;
+}
+/* /Group Option CSS */
+
+/* Form Field CSS */
+.form-field {
+	clear: both;
+	float: left;
+	width: 100%;
+	margin-bottom: 5px;
+	min-height: 24px;
+}
+.form-field label {
+	display: block;
+	width: 320px;
+	float: left;
+}
+.form-field input, .form-field textarea {
+	width: auto;
+}
+.form-field .color-picker {
+	width: 82px;
+}
+/* /Form Field CSS */
+
+/* Message Box CSS */
+.info-message {
+	clear: both;
+	border: solid 1px #349534;
+	background: #C9FFCA;
+	color: #008000;
+	font-weight: bold;
+	padding: 8px;
+	text-align: center;
+	margin: 8px 0;
+}
+.error-message {
+	clear: both;
+	border: solid 1px #CC0000;
+	background: #F7CBCA;
+	color: #CC0000;
+	font-weight: bold;
+	padding: 8px;
+	text-align: center;
+	margin: 8px 0;
+}
+/* /Message Box CSS */
+
+.im_field {
+	border-bottom: 1px dotted #CCCCCC;
+}
+.no_bottom_border {
+	border-bottom: none;
+}
+.form-field input.text_full, .form-field textarea.text_full {
+	clear: both;
+	margin: 5px 0 5px;
+	width: 100%;
+}
+
+#ip-child-themes td {
+	padding: 10px;
+}
+#ip-child-themes h3 {
+	margin: 15px 0 5px;
+}
+
+.ip-page-assignment label {
+}
+.ip-page-assignment input.radio {
+	margin-right: 5px;
+}
+.note-text {
+	color: #999;
+	font-size: 11px;
+}
+.button-management a {
+	color: #21759B;
+}
+.delete-icon {
+	display: block;
+	float: left;
+	width: 16px;
+	height: 16px;
+	background: url(../img/delete_icon.gif) no-repeat;
+	margin: 6px 0 0 6px;
+}
+
+#button-preview {
+	top: 270px;
+	right: 0;
+	position: fixed;
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000;
+	background: #FCFFD4;
+	overflow: hidden;
+}
+#im_button_preview_wrapper {
+	float: left;
+	position: absolute;
+}
+#im_button_preview {
+	display: block;
+	float: left;
+	text-decoration: none;
+}
+#im_option_loading {
+	width: 100%;
+	background: url(../images/progress.gif) no-repeat 50% 0;
+	margin: 50px 0;
+	padding: 28px 0;
+	text-align: center;
+}
+#im_option_wrapper {
+	visibility: hidden;
+}
+.im_option_menu {
+	float: left;
+	width: 100%;
+	border-bottom: 1px dotted #999;
+	margin: 10px 0;
+}
+.im_option_menu li {
+	float: left;
+	margin-right: 10px;
+}
+.im_option_menu li a {
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.crop_colorbox {
+	overflow: hidden;
+}
+
+div.option-tab > div > label
+{
+	width: 20%;
+	float: left;
+}
+
+div.ui-widget-content
+{
+}
+
+.ui-corner-all
+{
+	border: 0px;
+}
+
+.ui-widget-header
+{
+	background: transparent #111;
+}

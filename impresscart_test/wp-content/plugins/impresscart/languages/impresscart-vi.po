@@ -1,0 +1,42 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: impresscart 1.0\n"
+"POT-Creation-Date: 2012-09-14 14:42+0700\n"
+"PO-Revision-Date: 2012-09-14 16:20+0700\n"
+"Last-Translator: \n"
+"Language-Team: impressthemes <giappv@impressthemes.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.3\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"Language: Vietnamese\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+msgid "my plugin"
+msgstr "tôi viết cái này đấy"
+
+msgid "Administration"
+msgstr "Quản trị"
+
+msgid "Payment"
+msgstr "Phương thức thanh toán"
+
+msgid "Shipping"
+msgstr "Phương thức giao hàng"
+
+msgid "Totals"
+msgstr "Tính tiền cho hóa đơn"
+
+msgid "Attributes"
+msgstr "Thuộc tính"
+
+msgid "Options"
+msgstr "Các lựa chọn"
+
+msgid "Orders"
+msgstr "Đơn hàng"
+
+msgid "Returns"
+msgstr "Đơn hàng trả lại"

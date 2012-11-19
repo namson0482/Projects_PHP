@@ -1,0 +1,41 @@
+.imcart_tooltip {
+	background:url(../../images/imcart_icon_tooltip.png);
+	width:20px;
+	height:20px;
+	display:inline-block;
+	text-indent:-9999px;
+	line-height:18px;
+	position:relative;
+	margin-left:5px;
+}
+/*!
+ * jQuery UI Tooltip @VERSION
+ * http://jqueryui.com
+ *
+ * Copyright 2012 jQuery Foundation and other contributors
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ */
+.ui-tooltip {
+	padding:13px;
+	position:absolute;
+	z-index:9999;
+	/*-o-box-shadow: 0 0 5px #aaa;
+	-moz-box-shadow: 0 0 5px #aaa;
+	-webkit-box-shadow: 0 0 5px #aaa;
+	box-shadow: 0 0 5px #aaa;*/
+	border:none;
+	background:url(../../images/imcart_bg_tooltip.png) no-repeat left 22px;
+	border-radius: 0;
+	max-width:520px;
+}
+.ui-tooltip .ui-tooltip-content {
+	background:#fff;
+	color:#f47121;
+	padding:10px;	
+}
+
+/* Fades and background-images don't work well together in IE6, drop the image */
+* html .ui-tooltip {
+	background-image: none;
+}

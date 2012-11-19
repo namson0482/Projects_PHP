@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<title>Goscom Test Menu</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<link rel="stylesheet" type="text/css" href="css/goscom.css"
+	media="screen">
+<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="js/hoverIntent.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+<script type="text/javascript">
+	
+	// initialise plugins
+	jQuery(function() {
+		jQuery('ul.sf-menu').superfish();
+	});
+	
+</script>
+</head>
+<body>
+	<ul class="sf-menu">
+		<li class="current"><a href="#a">Child 1</a>
+			<ul>
+				<li><a href="#aa">Item 1</a></li>
+				<li class="current"><a href="#ab">Item 2</a>
+					<ul>
+						<li><a href="#aba">Item 2.1</a></li>
+						<li><a href="#abb">Item 2.2</a></li>
+						<li><a href="#abc">Item 2.3</a></li>
+						<li><a href="#abd">Item 2.4</a></li>
+					</ul></li>
+				<li><a href="#">Item 3</a></li>
+
+			</ul> <!-- End UL -->
+			
+			
+			</li>
+
+		<li><a href="#">Child 2</a></li>
+	</ul>
+
+
+	<script>
+		/*
+		jQuery.noConflict();
+		jQuery(document).ready(function() { 
+			jQuery('ul.sf-menu').superfish({ 
+		        delay:       1000,                            // one second delay on mouseout 
+		        animation:   {opacity:'show',height:'show'},  // fade-in and slide-down animation 
+		        speed:       'fast',                          // faster animation speed 
+		        autoArrows:  false,                           // disable generation of arrow mark-up 
+		        dropShadows: false                            // disable drop shadows 
+		    }); 
+		}); 
+		 */
+	</script>
+</body>
+</html>

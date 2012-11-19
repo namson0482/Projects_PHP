@@ -1,0 +1,3618 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: impresscart\n"
+"POT-Creation-Date: 2012-09-14 13:49+0700\n"
+"PO-Revision-Date: 2012-09-14 13:53+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.3\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+
+msgid "Administration"
+msgstr "Administration"
+
+msgid "Payment"
+msgstr "Payment"
+
+msgid "Shipping"
+msgstr "Shipping"
+
+msgid "Totals"
+msgstr "Order Totals"
+
+msgid "Cash on delivery payment method setting"
+msgstr "Cash on delivery payment method setting"
+
+msgid "My Account"
+msgstr "My Account"
+
+msgid "My Orders"
+msgstr "My Orders"
+
+msgid "Newsletter"
+msgstr "Newsletter"
+
+msgid "Edit your account information"
+msgstr "Edit your account information"
+
+msgid "Change your password"
+msgstr "Change your password"
+
+msgid "Modify your address book entries"
+msgstr "Modify your address book entries"
+
+msgid "Modify your wish list"
+msgstr "Modify your wish list"
+
+msgid "View your order history"
+msgstr "View your order history"
+
+msgid "Downloads"
+msgstr "Downloads"
+
+msgid "Your Reward Points"
+msgstr "Your Reward Points"
+
+msgid "View your return requests"
+msgstr "View your return requests"
+
+msgid "Your Transactions"
+msgstr "Your Transactions"
+
+msgid "Subscribe / unsubscribe to newsletter"
+msgstr "Subscribe / unsubscribe to newsletter"
+
+msgid "text_insert"
+msgstr "text_insert"
+
+msgid "text_update"
+msgstr "text_update"
+
+msgid "text_delete"
+msgstr "text_delete"
+
+msgid "Address Book"
+msgstr "Address Book"
+
+msgid "Entries"
+msgstr "Entries"
+
+msgid "New Address"
+msgstr "New Address"
+
+msgid "Edit"
+msgstr "Edit"
+
+msgid "Delete"
+msgstr "Delete"
+
+msgid "Back"
+msgstr "Back"
+
+msgid "Edit address"
+msgstr "Edit address"
+
+msgid "Yes"
+msgstr "Yes"
+
+msgid "No"
+msgstr "No"
+
+msgid "Select"
+msgstr "Select"
+
+msgid "First name:"
+msgstr "First name:"
+
+msgid "Last name"
+msgstr "Last name"
+
+msgid "Company"
+msgstr "Company"
+
+msgid "Address 1"
+msgstr "Address 1"
+
+msgid "Address 2"
+msgstr "Address 2"
+
+msgid "Post code"
+msgstr "Post code"
+
+msgid "City"
+msgstr "City"
+
+msgid "Country"
+msgstr "Country"
+
+msgid "Region / State:"
+msgstr "Region / State:"
+
+msgid "Default Address:"
+msgstr "Default Address:"
+
+msgid "Continue"
+msgstr "Continue"
+
+msgid "error_firstname"
+msgstr "error_firstname"
+
+msgid "error_lastname"
+msgstr "error_lastname"
+
+msgid "error_address_1"
+msgstr "error_address_1"
+
+msgid "error_city"
+msgstr "error_city"
+
+msgid "error_postcode"
+msgstr "error_postcode"
+
+msgid "error_country"
+msgstr "error_country"
+
+msgid "error_zone"
+msgstr "error_zone"
+
+msgid "error_delete"
+msgstr "error_delete"
+
+msgid "error_default"
+msgstr "error_default"
+
+msgid "Select"
+msgstr "Select"
+
+msgid "None"
+msgstr "None"
+
+msgid "Account Downloads"
+msgstr "Account Downloads"
+
+msgid "Order ID:"
+msgstr "Order ID:"
+
+msgid "Date Added"
+msgstr "Date Added"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Size"
+msgstr "Size"
+
+msgid "Download"
+msgstr "Download"
+
+msgid "D-M-Y"
+msgstr "D-M-Y"
+
+msgid "You have not made any previous downloadable orders!"
+msgstr "You have not made any previous downloadable orders!"
+
+msgid "Update successfully"
+msgstr "Update successfully"
+
+msgid "My Account Information"
+msgstr "My Account Information"
+
+msgid "Your Personal Details"
+msgstr "Your Personal Details"
+
+msgid "Email:"
+msgstr Email:""
+
+msgid "Telephone:"
+msgstr "Telephone:"
+
+msgid "Fax:"
+msgstr "Fax:"
+
+msgid "error_email"
+msgstr "error_email"
+
+msgid "error_exists"
+msgstr "error_exists"
+
+msgid "error_telephone"
+msgstr "error_telephone"
+
+msgid "subject"
+msgstr "subject"
+
+msgid "greeting"
+msgstr "greeting"
+
+msgid "password"
+msgstr "password"
+
+msgid "Success: Your newsletter subscription has been successfully updated!"
+msgstr "Success: Your newsletter subscription has been successfully updated!"
+
+msgid "Home"
+msgstr "Home"
+
+msgid "Account"
+msgstr "Account"
+
+msgid "»"
+msgstr "»"
+
+msgid "forgotten"
+msgstr "forgotten"
+
+msgid "Forgot Your Password?"
+msgstr "Forgot Your Password?"
+
+msgid "Your E-Mail Address"
+msgstr "Your E-Mail Address"
+
+msgid "Enter the e-mail address associated with your account. Click submit to have your password e-mailed to you."
+msgstr "Enter the e-mail address associated with your account. Click submit to have your password e-mailed to you."
+
+msgid "E-Mail Address:"
+msgstr "E-Mail Address:"
+
+msgid "Warning: The E-Mail Address was not found in our records, please try again!"
+msgstr "Warning: The E-Mail Address was not found in our records, please try again!"
+
+msgid "Warning: No match for E-Mail Address and/or Password."
+msgstr "Warning: No match for E-Mail Address and/or Password."
+
+msgid "Login"
+msgstr "Login"
+
+msgid "New customer"
+msgstr "New customer"
+
+msgid "Register"
+msgstr "Register"
+
+msgid "By creating an account you will be able to shop faster, be up to date on an order\'s status, and keep track of the orders you have previously made."
+msgstr "By creating an account you will be able to shop faster, be up to date on an order\'s status, and keep track of the orders you have previously made."
+
+msgid "Returning Customer"
+msgstr "Returning Customer"
+
+msgid "I am a returning customer"
+msgstr "I am a returning customer"
+
+msgid "Forgotten Password"
+msgstr "Forgotten Password"
+
+msgid "Password"
+msgstr "Password"
+
+msgid "home"
+msgstr "home"
+
+msgid "separator"
+msgstr "separator"
+
+msgid "logout"
+msgstr "logout"
+
+msgid "Newsletter Subscription"
+msgstr "Newsletter Subscription"
+
+msgid "message"
+msgstr "message"
+
+msgid "button_continue"
+msgstr "button_continue"
+
+msgid "You have logged out successfully"
+msgstr "You have logged out successfully"
+
+msgid "text_no"
+msgstr "text_no"
+
+msgid "Subscribe"
+msgstr "Subscribe"
+
+msgid "button_back"
+msgstr "button_back"
+
+msgid "Your order history"
+msgstr "Your order history"
+
+msgid "Order Id"
+msgstr "Order Id"
+
+msgid "Order Status"
+msgstr "Order Status"
+
+msgid "Customer"
+msgstr "Customer"
+
+msgid "Products"
+msgstr "Products"
+
+msgid "Total"
+msgstr "Total"
+
+msgid "You have not made any previous orders!"
+msgstr "You have not made any previous orders!"
+
+msgid "View"
+msgstr "View"
+
+msgid "Order Information"
+msgstr "Order Information"
+
+msgid "Order Detail"
+msgstr "Order Detail"
+
+msgid "Invoice No.:"
+msgstr "Invoice No.:"
+
+msgid "Date Added:"
+msgstr "Date Added:"
+
+msgid "Shipping Method:"
+msgstr "Shipping Method:"
+
+msgid "Shipping Address"
+msgstr "Shipping Address"
+
+msgid "Payment Method:"
+msgstr "Payment Method:"
+
+msgid "Payment Address"
+msgstr "Payment Address"
+
+msgid "Order History"
+msgstr "Order History"
+
+msgid "Order Comments"
+msgstr "Order Comments"
+
+msgid "Choose an action:"
+msgstr "Choose an action:"
+
+msgid "With selected.."
+msgstr "With selected.."
+
+msgid "Add to Cart"
+msgstr "Add to Cart"
+
+msgid "Return Products"
+msgstr "Return Products"
+
+msgid "Product Name"
+msgstr "Product Name"
+
+msgid "Model"
+msgstr "Model"
+
+msgid "Quantity"
+msgstr "Quantity"
+
+msgid "Price"
+msgstr "Price"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Comment"
+msgstr "Comment"
+
+msgid "order not found!!!"
+msgstr "order not found!!!"
+
+msgid "You have not selected any product!!!"
+msgstr "You have not selected any product!!!"
+
+msgid "Change password:"
+msgstr "Change password:"
+
+msgid "Enter your new password:"
+msgstr "Enter your new password:"
+
+msgid "Enter your current password:"
+msgstr "Enter your current password:"
+
+msgid "Password:"
+msgstr "Password:"
+
+msgid "confirm password:"
+msgstr "confirm password:"
+
+msgid "Your current password isn\'t match"
+msgstr "Your current password isn\'t match"
+
+msgid "Your password must be a least 6 characters and less than 20 characters"
+msgstr "Your password must be a least 6 characters and less than 20 characters"
+
+msgid "Your confirm password does not match"
+msgstr "Your confirm password does not match"
+
+msgid "Register Account"
+msgstr "Register Account"
+
+msgid "If you already have an account with us, please login at the <a href="%s">login page</a>."
+msgstr "If you already have an account with us, please login at the <a href="%s">login page</a>."
+
+msgid "Your Address"
+msgstr "Your Address"
+
+msgid "Your Password"
+msgstr "Your Password"
+
+msgid "E-Mail:"
+msgstr "E-Mail:"
+
+msgid "Company:"
+msgstr "Company:"
+
+msgid "Address 1:"
+msgstr "Address 1:"
+
+msgid "Address 2:"
+msgstr "Address 2:"
+
+msgid "Post Code:"
+msgstr "Post Code:"
+
+msgid "City:"
+msgstr "City:"
+
+msgid "Country:"
+msgstr "Country:"
+
+msgid "Subscribe:"
+msgstr "Subscribe:"
+
+msgid "Password Confirm:"
+msgstr "Password Confirm:"
+
+msgid "Postcode must be between 2 and 10 characters!"
+msgstr "Postcode must be between 2 and 10 characters!"
+
+msgid "Please select a country!"
+msgstr "Please select a country!"
+
+msgid "Please select a zone"
+msgstr "Please select a zone"
+
+msgid "Password must be between 4 and 20 characters!"
+msgstr "Password must be between 4 and 20 characters!"
+
+msgid "Password confirmation does not match password!"
+msgstr "Password confirmation does not match password!"
+
+msgid "-- Please select --"
+msgstr "-- Please select --"
+
+msgid "No_Zone"
+msgstr "No_Zone"
+
+msgid "Product Returns"
+msgstr "Product Returns"
+
+msgid "Return ID:"
+msgstr "Return ID:"
+
+msgid "Status:"
+msgstr "Status:"
+
+msgid "Customer:"
+msgstr "Customer:"
+
+msgid "Products:"
+msgstr "Products:"
+
+msgid "You have not made any previous returns!"
+msgstr "You have not made any previous returns!"
+
+msgid "d/m/Y"
+msgstr "d/m/Y"
+
+msgid "Return Information"
+msgstr "Return Information"
+
+msgid "text_email"
+msgstr "text_email"
+
+msgid "text_telephone"
+msgstr "text_telephone"
+
+msgid "Return History"
+msgstr "Return History"
+
+msgid "Opened"
+msgstr "Opened"
+
+msgid "Reason"
+msgstr "Reason"
+
+msgid "Action"
+msgstr "Action"
+
+msgid "The returns you requested could not be found!"
+msgstr "The returns you requested could not be found!"
+
+msgid "<p>Please complete the form below to request an RMA number.</p>"
+msgstr "<p>Please complete the form below to request an RMA number.</p>"
+
+msgid "Product Information &amp; Reason for Return"
+msgstr "Product Information &amp; Reason for Return"
+
+msgid "Additional Information"
+msgstr "Additional Information"
+
+msgid "Order Date:"
+msgstr "Order Date:"
+
+msgid "Product Name:"
+msgstr "Product Name:"
+
+msgid "Product Code:"
+msgstr "Product Code:"
+
+msgid "Reason for Return:"
+msgstr "Reason for Return:"
+
+msgid "Product is opened:"
+msgstr "Product is opened:"
+
+msgid "Faulty or other details:"
+msgstr "Faulty or other details:"
+
+msgid "Add Product"
+msgstr "Add Product"
+
+msgid "Remove"
+msgstr "Remove"
+
+msgid "error_order_id"
+msgstr "error_order_id"
+
+msgid "error_product"
+msgstr "error_product"
+
+msgid "Warning: Please select reason for return."
+msgstr "Warning: Please select reason for return."
+
+msgid "error_name"
+msgstr "error_name"
+
+msgid "error_model"
+msgstr "error_model"
+
+msgid "Reward Points"
+msgstr "Reward Points"
+
+msgid "Description"
+msgstr "Description"
+
+msgid "Points"
+msgstr "Points"
+
+msgid "Your total number of reward points is:"
+msgstr "Your total number of reward points is:"
+
+msgid "You do not have any reward points!"
+msgstr "You do not have any reward points!"
+
+msgid "date_format_short"
+msgstr "date_format_short"
+
+msgid "Your Account Has Been Created!"
+msgstr "Your Account Has Been Created!"
+
+msgid "Success"
+msgstr "Success"
+
+msgid "<p>Congratulations! Your new account has been successfully created!</p> <p>You can now take advantage of member privileges to enhance your online shopping experience with us.</p> <p>If you have ANY questions about the operation of this online shop, please email the store owner.</p> <p>A confirmation has been sent to the provided email address. If you have not received it within the hour, please <a href="%s">contact us</a>.</p>"
+msgstr "<p>Congratulations! Your new account has been successfully created!</p> <p>You can now take advantage of member privileges to enhance your online shopping experience with us.</p> <p>If you have ANY questions about the operation of this online shop, please email the store owner.</p> <p>A confirmation has been sent to the provided email address. If you have not received it within the hour, please <a href="%s">contact us</a>.</p>"
+
+msgid "<p>Thank you for registering with %s!</p><p>You will be notified by email once your account has been activated by the store owner.</p><p>If you have ANY questions about the operation of this online shop, please <a href="%s">contact the store owner</a>.</p>"
+msgstr "<p>Thank you for registering with %s!</p><p>You will be notified by email once your account has been activated by the store owner.</p><p>If you have ANY questions about the operation of this online shop, please <a href="%s">contact the store owner</a>.</p>"
+
+msgid "Amount (%s)"
+msgstr "Amount (%s)"
+
+msgid "Your current balance is:"
+msgstr "Your current balance is:"
+
+msgid "You do not have any transactions!"
+msgstr "You do not have any transactions!"
+
+msgid "Wishlist"
+msgstr "Wishlist"
+
+msgid "Your wish list is empty."
+msgstr "Your wish list is empty."
+
+msgid "In Stock"
+msgstr "In Stock"
+
+msgid "Update"
+msgstr "Update"
+
+msgid "Success: You have added <a href="%s">%s</a> to your <a href="%s">wish list</a>!"
+msgstr "Success: You have added <a href="%s">%s</a> to your <a href="%s">wish list</a>!"
+
+msgid "You must <a href="%s">login</a> or <a href="%s">create an account</a> to save <a href="%s">%s</a> to your <a href="%s">wish list</a>!"
+msgstr "You must <a href="%s">login</a> or <a href="%s">create an account</a> to save <a href="%s">%s</a> to your <a href="%s">wish list</a>!"
+
+msgid "Wish List (%s)"
+msgstr "Wish List (%s)"
+
+msgid "File upload error, please try again'"
+msgstr "File upload error, please try again'"
+
+msgid "Coupon"
+msgstr "Coupon"
+
+msgid "success"
+msgstr "success"
+
+msgid "edit"
+msgstr "edit"
+
+msgid "text_enabled"
+msgstr "text_enabled"
+
+msgid "text_disabled"
+msgstr "text_disabled"
+
+msgid "text_no_results"
+msgstr "text_no_results"
+
+msgid "column_name"
+msgstr "column_name"
+
+msgid "column_code"
+msgstr "column_code"
+
+msgid "column_discount"
+msgstr "column_discount"
+
+msgid "column_date_start"
+msgstr "column_date_start"
+
+msgid "column_date_end"
+msgstr "column_date_end"
+
+msgid "column_status"
+msgstr "column_status"
+
+msgid "column_action"
+msgstr "column_action"
+
+msgid "button_insert"
+msgstr "button_insert"
+
+msgid "button_delete"
+msgstr "button_delete"
+
+msgid "pagination"
+msgstr "pagination"
+
+msgid "text_percent"
+msgstr "text_percent"
+
+msgid "text_amount"
+msgstr "text_amount"
+
+msgid "entry_name"
+msgstr "entry_name"
+
+msgid "entry_description"
+msgstr "entry_description"
+
+msgid "entry_code"
+msgstr "entry_code"
+
+msgid "entry_discount"
+msgstr "entry_discount"
+
+msgid "entry_logged"
+msgstr "entry_logged"
+
+msgid "entry_shipping"
+msgstr "entry_shipping"
+
+msgid "entry_type"
+msgstr "entry_type"
+
+msgid "entry_total"
+msgstr "entry_total"
+
+msgid "entry_category"
+msgstr "entry_category"
+
+msgid "entry_product"
+msgstr "entry_product"
+
+msgid "entry_date_start"
+msgstr "entry_date_start"
+
+msgid "entry_date_end"
+msgstr "entry_date_end"
+
+msgid "entry_uses_total"
+msgstr "entry_uses_total"
+
+msgid "entry_status"
+msgstr "entry_status"
+
+msgid "button_save"
+msgstr "button_save"
+
+msgid "button_cancel"
+msgstr "button_cancel"
+
+msgid "tab_general"
+msgstr "tab_general"
+
+msgid "tab_coupon_history"
+msgstr "tab_coupon_history"
+
+msgid "error_permission"
+msgstr "error_permission"
+
+msgid "error_code"
+msgstr "error_code"
+
+msgid "Percentage"
+msgstr "Percentage"
+
+msgid "Fixed Amount"
+msgstr "Fixed Amount"
+
+msgid "Coupon Name:"
+msgstr "Coupon Name:"
+
+msgid "Code:<br /><span class="help">The code the customer enters to get the discount</span>"
+msgstr "Code:<br /><span class="help">The code the customer enters to get the discount</span>"
+
+msgid "Discount:"
+msgstr "Discount:"
+
+msgid "Customer Login:<br /><span class="help">Customer must be logged in to use the coupon.</span>"
+msgstr "Customer Login:<br /><span class="help">Customer must be logged in to use the coupon.</span>"
+
+msgid "Free Shipping:"
+msgstr "Free Shipping:"
+
+msgid "Type:<br /><span class="help">Percentage or Fixed Amount</span>"
+msgstr "Type:<br /><span class="help">Percentage or Fixed Amount</span>"
+
+msgid "Total Amount:<br /><span class="help">The total amount that must reached before the coupon is valid.</span>"
+msgstr "Total Amount:<br /><span class="help">The total amount that must reached before the coupon is valid.</span>"
+
+msgid "Category:<br /><span class="help">Choose all products under selected category.</span>"
+msgstr "Category:<br /><span class="help">Choose all products under selected category.</span>"
+
+msgid "Products:<br /><span class="help">Choose specific products the coupon will apply to. Select no products to apply coupon to entire cart.</span>"
+msgstr "Products:<br /><span class="help">Choose specific products the coupon will apply to. Select no products to apply coupon to entire cart.</span>"
+
+msgid "Date start:"
+msgstr "Date start:"
+
+msgid "Date end:"
+msgstr "Date end:"
+
+msgid "Uses Per Coupon:<br /><span class="help">The maximum number of times the coupon can be used by any customer. Leave blank for unlimited</span>"
+msgstr "Uses Per Coupon:<br /><span class="help">The maximum number of times the coupon can be used by any customer. Leave blank for unlimited</span>"
+
+msgid "Uses Per Customer:<br /><span class="help">The maximum number of times the coupon can be used by a single customer. Leave blank for unlimited</span>"
+msgstr "Uses Per Customer:<br /><span class="help">The maximum number of times the coupon can be used by a single customer. Leave blank for unlimited</span>"
+
+msgid "Save"
+msgstr "Save"
+
+msgid "Cancel"
+msgstr "Cancel"
+
+msgid "General"
+msgstr "General"
+
+msgid "Coupon History"
+msgstr "Coupon History"
+
+msgid "Add Reward Points:"
+msgstr "Add Reward Points:"
+
+msgid "Remove Reward Points:"
+msgstr "Remove Reward Points:"
+
+msgid "Invoice Date:"
+msgstr "Invoice Date:"
+
+msgid "Invoice No:"
+msgstr "Invoice No:"
+
+msgid "Store name:"
+msgstr "Store name:"
+
+msgid "Store url:"
+msgstr "Store url:"
+
+msgid "Customer Group:"
+msgstr "Customer Group:"
+
+msgid "IP:"
+msgstr "IP:"
+
+msgid "Order status:"
+msgstr "Order status:"
+
+msgid "Comment:"
+msgstr "Comment:"
+
+msgid "Affiliate:"
+msgstr "Affiliate:"
+
+msgid "Commission:"
+msgstr "Commission:"
+
+msgid "Date modified:"
+msgstr "Date modified:"
+
+msgid "Firstname:"
+msgstr "Firstname:"
+
+msgid "Lastname:"
+msgstr "Lastname:"
+
+msgid "Postcode"
+msgstr "Postcode"
+
+msgid "Zone:"
+msgstr "Zone:"
+
+msgid "Zone code:"
+msgstr "Zone code:"
+
+msgid "text_wait"
+msgstr "text_wait"
+
+msgid "Generate"
+msgstr "Generate"
+
+msgid "Add reward:"
+msgstr "Add reward:"
+
+msgid "Remove reward:"
+msgstr "Remove reward:"
+
+msgid "Add commission:"
+msgstr "Add commission:"
+
+msgid "Remove commission:"
+msgstr "Remove commission:"
+
+msgid "Add credit:"
+msgstr "Add credit:"
+
+msgid "Remove credit:"
+msgstr "Remove credit:"
+
+msgid "Product"
+msgstr "Product"
+
+msgid "Filename"
+msgstr "Filename"
+
+msgid "Remaining"
+msgstr "Remaining"
+
+msgid "Notify"
+msgstr "Notify"
+
+msgid "Invoice"
+msgstr "Invoice"
+
+msgid "Add history"
+msgstr "Add history"
+
+msgid "No Results"
+msgstr "No Results"
+
+msgid "No history added"
+msgstr "No history added"
+
+msgid "Return Status"
+msgstr "Return Status"
+
+msgid "Notify user"
+msgstr "Notify user"
+
+msgid "Return Status:"
+msgstr "Return Status:"
+
+msgid "Unopened"
+msgstr "Unopened"
+
+msgid "Impresscart -> Order Total Settings"
+msgstr "Impresscart -> Order Total Settings"
+
+msgid "Order Totals"
+msgstr "Order Totals"
+
+msgid "Confirm"
+msgstr "Confirm"
+
+msgid "Sort Order"
+msgstr "Sort Order"
+
+msgid "Purchase a Gift Certificate"
+msgstr "Purchase a Gift Certificate"
+
+msgid "Code:<br /><span class="help">The code the customer enters to activate the voucher.</span>"
+msgstr "Code:<br /><span class="help">The code the customer enters to activate the voucher.</span>"
+
+msgid "From Name:"
+msgstr "From Name:"
+
+msgid "From Email:"
+msgstr "From Email:"
+
+msgid "To Name:"
+msgstr "To Name:"
+
+msgid "To Email:"
+msgstr "To Email:"
+
+msgid "Message:"
+msgstr "Message:"
+
+msgid "Amount:"
+msgstr "Amount:"
+
+msgid "I want to use an existing address"
+msgstr "I want to use an existing address"
+
+msgid "I want to use a new address"
+msgstr "I want to use a new address"
+
+msgid "error_address"
+msgstr "error_address"
+
+msgid "First Name must be between 1 and 32 characters!"
+msgstr "First Name must be between 1 and 32 characters!"
+
+msgid "Last Name must be between 1 and 32 characters!"
+msgstr "Last Name must be between 1 and 32 characters!"
+
+msgid "Address 1 must be between 3 and 128 characters!"
+msgstr "Address 1 must be between 3 and 128 characters!"
+
+msgid "City must be between 2 and 128 characters!"
+msgstr "City must be between 2 and 128 characters!"
+
+msgid "No Zone"
+msgstr "No Zone"
+
+msgid "error_minimum"
+msgstr "error_minimum"
+
+msgid "Reward Points: "
+msgstr "Reward Points: "
+
+msgid "Your cart is empty"
+msgstr "Your cart is empty"
+
+msgid "Your cart"
+msgstr "Your cart"
+
+msgid "Weight"
+msgstr "Weight"
+
+msgid "Image"
+msgstr "Image"
+
+msgid "Shopping"
+msgstr "Shopping"
+
+msgid "Checkout"
+msgstr "Checkout"
+
+msgid "Apply Coupon"
+msgstr "Apply Coupon"
+
+msgid "Apply Voucher"
+msgstr "Apply Voucher"
+
+msgid "Error Stock"
+msgstr "Error Stock"
+
+msgid "item(s)"
+msgstr "item(s)"
+
+msgid "Minimum order amount for %s is %s!"
+msgstr "Minimum order amount for %s is %s!"
+
+msgid "%s required!"
+msgstr "%s required!"
+
+msgid "Your shopping cart is empty!"
+msgstr "Your shopping cart is empty!"
+
+msgid "%s item(s) - %s"
+msgstr "%s item(s) - %s"
+
+msgid "None of the product is the specific product in coupon category."
+msgstr "None of the product is the specific product in coupon category."
+
+msgid "Coupon not matched!"
+msgstr "Coupon not matched!"
+
+msgid "Step 1: Checkout Options"
+msgstr "Step 1: Checkout Options"
+
+msgid "Step 2: Account &amp; Billing Details"
+msgstr "Step 2: Account &amp; Billing Details"
+
+msgid "Step 2: Billing Details"
+msgstr "Step 2: Billing Details"
+
+msgid "Step 3: Delivery Details"
+msgstr "Step 3: Delivery Details"
+
+msgid "Step 4: Delivery Method"
+msgstr "Step 4: Delivery Method"
+
+msgid "Step 5: Payment Method"
+msgstr "Step 5: Payment Method"
+
+msgid "Step 6: Confirm Order"
+msgstr "Step 6: Confirm Order"
+
+msgid "Modify &raquo;"
+msgstr "Modify &raquo;"
+
+msgid "My delivery and billing addresses are the same."
+msgstr "My delivery and billing addresses are the same."
+
+msgid "E-Mail Address does not appear to be valid!"
+msgstr "E-Mail Address does not appear to be valid!"
+
+msgid "Telephone must be between 3 and 32 characters!"
+msgstr "Telephone must be between 3 and 32 characters!"
+
+msgid "text_logged"
+msgstr "text_logged"
+
+msgid "text_items"
+msgstr "text_items"
+
+msgid "Wrong username or password'"
+msgstr "Wrong username or password'"
+
+msgid "You are loggin with administrator, please logout first, then login with normal user to checkout your cart. "
+msgstr "You are loggin with administrator, please logout first, then login with normal user to checkout your cart. "
+
+msgid "Return Customer
+msgstr "Return Customer"
+
+msgid "Guest"
+msgstr "Guest"
+
+msgid "I am returning customer"
+msgstr "I am returning customer"
+
+msgid "Register new account"
+msgstr "Register new account"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Password"
+msgstr "Password"
+
+msgid "error_payment"
+msgstr "error_payment"
+
+msgid "Select payment method:"
+msgstr "Select payment method:"
+
+msgid "Comments"
+msgstr "Comments"
+
+msgid "Continue:"
+msgstr "Continue:"
+
+msgid "error_no_payment"
+msgstr "error_no_payment"
+
+msgid "Please enter your first name"
+msgstr "Please enter your first name"
+
+msgid "Please enter your last name"
+msgstr "Please enter your last name"
+
+msgid "Please enter your email"
+msgstr "Please enter your email"
+
+msgid "email exit please choose orther email"
+msgstr "email exit please choose orther email"
+
+msgid "please telephone must number"
+msgstr "please telephone must number"
+
+msgid "please enter your address"
+msgstr "please enter your address"
+
+msgid "Please enter your city"
+msgstr "Please enter your city"
+
+msgid "Please enter your postcode"
+msgstr "Please enter your postcode"
+
+msgid "Please enter your country"
+msgstr "Please enter your country"
+
+msgid "Please enter your zone"
+msgstr "Please enter your zone"
+
+msgid "password is error"
+msgstr "password is error"
+
+msgid "password confirm is not match"
+msgstr "password confirm is not match"
+
+msgid "error_agree"
+msgstr "error_agree"
+
+msgid "Your details"
+msgstr "Your details"
+
+msgid "First name"
+msgstr "First name"
+
+msgid "Telephone"
+msgstr "Telephone"
+
+msgid "Fax"
+msgstr "Fax"
+
+msgid "Zone"
+msgstr "Zone"
+
+msgid "I have read and agree to the <a class="colorbox" href="%s" alt="%s"><b>%s</b></a>"
+msgstr "I have read and agree to the <a class="colorbox" href="%s" alt="%s"><b>%s</b></a>"
+
+msgid "You have not selected shipping method!!!"
+msgstr "You have not selected shipping method!!!"
+
+msgid "Shipping method error"
+msgstr "Shipping method error"
+
+msgid "Select shipping method:"
+msgstr "Select shipping method:"
+
+msgid "Warning: No Shipping options are available. Please <a href="%s">contact us</a> for assistance!"
+msgstr "Warning: No Shipping options are available. Please <a href="%s">contact us</a> for assistance!"
+
+msgid "Your Order Has Been Processed!"
+msgstr "Your Order Has Been Processed!"
+
+msgid "<p>Your order has been successfully processed!</p><p>You can view your order history by going to the <a href="%s">my account</a> page and by clicking on <a href="%s">history</a>.</p>If your purchase has an associated download, you can goto the account <a href="%s">downloads</a> page to view them.</p><p>Please direct any questions you have to the <a href="%s">store owner</a>.</p><p>Thanks for shopping with us online!</p>"
+msgstr "<p>Your order has been successfully processed!</p><p>You can view your order history by going to the <a href="%s">my account</a> page and by clicking on <a href="%s">history</a>.</p>If your purchase has an associated download, you can goto the account <a href="%s">downloads</a> page to view them.</p><p>Please direct any questions you have to the <a href="%s">store owner</a>.</p><p>Thanks for shopping with us online!</p>"
+
+msgid "<p>Your order has been successfully processed!</p><p>Please direct any questions you have to the <a href="%s">store owner</a>.</p><p>Thanks for shopping with us online!"
+msgstr "<p>Your order has been successfully processed!</p><p>Please direct any questions you have to the <a href="%s">store owner</a>.</p><p>Thanks for shopping with us online!"
+
+msgid "Success: You have modified your product comparison!"
+msgstr "Success: You have modified your product comparison!"
+
+msgid "Product Comparison"
+msgstr "Product Comparison"
+
+msgid "Product Details"
+msgstr "Product Details"
+
+msgid "Brand"
+msgstr "Brand"
+
+msgid "Availability"
+msgstr "Availability"
+
+msgid "Rating"
+msgstr "Rating"
+
+msgid "Summary"
+msgstr "Summary"
+
+msgid "Dimensions (L x W x H)"
+msgstr "Dimensions (L x W x H)"
+
+msgid "You have not chosen any products to compare."
+msgstr "You have not chosen any products to compare."
+
+msgid "Based on %s reviews."
+msgstr "Based on %s reviews."
+
+msgid "Success: You have added <a href="%s">%s</a> to your <a href="%s">product comparison</a>!"
+msgstr "Success: You have added <a href="%s">%s</a> to your <a href="%s">product comparison</a>!"
+
+msgid "Product Compare (%s)"
+msgstr "Product Compare (%s)"
+
+msgid "Customer Order Report"
+msgstr "Customer Order Report"
+
+msgid "All Statues"
+msgstr "All Statues"
+
+msgid "No Of Orders"
+msgstr "No Of Orders"
+
+msgid "No of Products"
+msgstr "No of Products"
+
+msgid "Date start"
+msgstr "Date start"
+
+msgid "Date end"
+msgstr "Date end"
+
+msgid "Filter"
+msgstr "Filter"
+
+msgid "Customer Reward Report"
+msgstr "Customer Reward Report"
+
+msgid "Group"
+msgstr "Group"
+
+msgid "Orders"
+msgstr "Orders"
+
+msgid "Product views report"
+msgstr "Product views report"
+
+msgid "Product Model"
+msgstr "Product Model"
+
+msgid "Views"
+msgstr "Views"
+
+msgid "Percent"
+msgstr "Percent"
+
+msgid "Sale Coupon Report"
+msgstr "Sale Coupon Report"
+
+msgid "Coupon Name"
+msgstr "Coupon Name"
+
+msgid "Coupon Code"
+msgstr "Coupon Code"
+
+msgid "Num of orders"
+msgstr "Num of orders"
+
+msgid "Total coupon"
+msgstr "Total coupon"
+
+msgid "d-m-y"
+msgstr "d-m-y"
+
+msgid "Sale Order Report"
+msgstr "Sale Order Report"
+
+msgid "All Status"
+msgstr "All Status"
+
+msgid "Num of products"
+msgstr "Num of products"
+
+msgid "Tax"
+msgstr "Tax"
+
+msgid "Group by:"
+msgstr "Group by:"
+
+msgid "Year"
+msgstr "Year"
+
+msgid "Month"
+msgstr "Month"
+
+msgid "Week"
+msgstr "Week"
+
+msgid "Day"
+msgstr "Day"
+
+msgid "Sale return report"
+msgstr "Sale return report"
+
+msgid "Num of returns"
+msgstr "Num of returns"
+
+msgid "Order Shipping Report"
+msgstr "Order Shipping Report"
+
+msgid "Title"
+msgstr "Title"
+
+msgid "Shipping Total"
+msgstr "Shipping Total"
+
+msgid "Impress Cart Order Tax Total Report"
+msgstr "Impress Cart Order Tax Total Report"
+
+msgid "Tax Title"
+msgstr "Tax Title"
+
+msgid "Tax Total"
+msgstr "Tax Total"
+
+msgid "Thank you for your interest in %s products. Your order has been received and will be processed once payment has been confirmed."
+msgstr "Thank you for your interest in %s products. Your order has been received and will be processed once payment has been confirmed."
+
+msgid "To view your order click on the link below:"
+msgstr "To view your order click on the link below:"
+
+msgid "Once your payment has been confirmed you can click on the link below to access your downloadable products:"
+msgstr "Once your payment has been confirmed you can click on the link below to access your downloadable products:"
+
+msgid "Order Details"
+msgstr "Order Details"
+
+msgid "Instructions"
+msgstr "Instructions"
+
+msgid "Shipping Method"
+msgstr "Shipping Method"
+
+msgid "IP"
+msgstr "IP"
+
+msgid "Product:"
+msgstr "Product:"
+
+msgid "Please reply to this email if you have any questions."
+msgstr "Please reply to this email if you have any questions."
+
+msgid "Powered By <a href="http://www.impressthemes.com">ImpressCart</a>."
+msgstr "Powered By <a href="http://www.impressthemes.com">ImpressCart</a>."
+
+msgid "y-m-d"
+msgstr "y-m-d"
+
+msgid "text_from"
+msgstr "text_from"
+
+msgid "text_redeem"
+msgstr "text_redeem"
+
+msgid "text_footer"
+msgstr "text_footer"
+
+msgid "text_welcome"
+msgstr "text_welcome"
+
+msgid "text_approval"
+msgstr "text_approval"
+
+msgid "Return for order #"
+msgstr "Return for order #"
+
+msgid "These are transactions."
+msgstr "These are transactions."
+
+msgid "Unit name already exists"
+msgstr "Unit name already exists"
+
+msgid "Currency name already exists"
+msgstr "Currency name already exists"
+
+msgid "The comments for your order are:"
+msgstr "The comments for your order are:"
+
+msgid "text_new_subject"
+msgstr "text_new_subject"
+
+msgid "text_new_received"
+msgstr "text_new_received"
+
+msgid "text_new_order_id"
+msgstr "text_new_order_id"
+
+msgid "text_new_date_added"
+msgstr "text_new_date_added"
+
+msgid "text_new_order_status"
+msgstr "text_new_order_status"
+
+msgid "text_new_products"
+msgstr "text_new_products"
+
+msgid "text_new_order_total"
+msgstr "text_new_order_total"
+
+msgid "text_new_comment"
+msgstr "text_new_comment"
+
+msgid "text_update_subject"
+msgstr "text_update_subject"
+
+msgid "text_update_order"
+msgstr "text_update_order"
+
+msgid "text_update_date_added"
+msgstr "text_update_date_added"
+
+msgid "text_update_order_status"
+msgstr "text_update_order_status"
+
+msgid "text_update_link"
+msgstr "text_update_link"
+
+msgid "text_update_comment"
+msgstr "text_update_comment"
+
+msgid "text_update_footer"
+msgstr "text_update_footer"
+
+msgid "Payment cod setting updated successfully"
+msgstr "Payment cod setting updated successfully"
+
+msgid "text_order"
+msgstr "text_order"
+
+msgid "text_date_added"
+msgstr "text_date_added"
+
+msgid "text_order_status"
+msgstr "text_order_status"
+
+msgid "text_link"
+msgstr "text_link"
+
+msgid "text_comment"
+msgstr "text_comment"
+
+msgid "not found!!!"
+msgstr "not found!!!"
+
+msgid "<strong>ALERT: You are logged out!</strong> Could not save draft. <a href="%s" target="_blank">Please log in again.</a>"
+msgstr "<strong>ALERT: You are logged out!</strong> Could not save draft. <a href="%s" target="_blank">Please log in again.</a>"
+
+msgid "%1$s (%2$s)"
+msgstr "%1$s (%2$s)"
+
+msgid "Comment %d does not exist"
+msgstr "Comment %d does not exist"
+
+msgid "An error has occurred. Please reload the page and try again."
+msgstr "An error has occurred. Please reload the page and try again."
+
+msgid "No tags found!"
+msgstr "No tags found!"
+
+msgid "ERROR: you are replying to a comment on a draft post."
+msgstr "ERROR: you are replying to a comment on a draft post."
+
+msgid "Sorry, you must be logged in to reply to a comment."
+msgstr "Sorry, you must be logged in to reply to a comment."
+
+msgid "ERROR: please type a comment."
+msgstr "ERROR: please type a comment."
+
+msgid "Please provide a custom field value."
+msgstr "Please provide a custom field value."
+
+msgid "Please provide a custom field name."
+msgstr "Please provide a custom field name."
+
+msgid "User <a href="#%s">%s</a> added"
+msgstr "User <a href="#%s">%s</a> added"
+
+msgid "g:i:s a"
+msgstr "g:i:s a"
+
+msgid "Draft saved at %s."
+msgstr "Draft saved at %s."
+
+msgid "Your login has expired. Please open a new browser window and <a href="%s" target="_blank">log in again</a>. "
+msgstr "Your login has expired. Please open a new browser window and <a href="%s" target="_blank">log in again</a>. "
+
+msgid "Someone"
+msgstr "Someone"
+
+msgid "%s is currently editing this article. If you update it, you will overwrite the changes."
+msgstr "%s is currently editing this article. If you update it, you will overwrite the changes."
+
+msgid "You are not allowed to edit this page."
+msgstr "You are not allowed to edit this page."
+
+msgid "You are not allowed to edit this post."
+msgstr "You are not allowed to edit this post."
+
+msgid "Saving is disabled: %s is currently editing this page."
+msgstr "Saving is disabled: %s is currently editing this page."
+
+msgid "Saving is disabled: %s is currently editing this post."
+msgstr "Saving is disabled: %s is currently editing this post."
+
+msgid "Item not updated."
+msgstr "Item not updated."
+
+msgid "Date"
+msgstr "Date"
+
+msgid "Published"
+msgstr "Published"
+
+msgid "Scheduled"
+msgstr "Scheduled"
+
+msgid "Pending Review"
+msgstr "Pending Review"
+
+msgid "Draft"
+msgstr "Draft"
+
+msgid "Y/m/d"
+msgstr "Y/m/d"
+
+msgid "Save failed"
+msgstr "Save failed"
+
+msgid "Saved."
+msgstr "Saved."
+
+msgid "Last edited by %1$s on %2$s at %3$s"
+msgstr "Last edited by %1$s on %2$s at %3$s"
+
+msgid "Last edited on %1$s at %2$s"
+msgstr "Last edited on %1$s at %2$s"
+
+msgid "Cheatin&#8217; uh?"
+msgstr "Cheatin&#8217; uh?"
+
+msgid "Could not update link in the database"
+msgstr "Could not update link in the database"
+
+msgid "Could not insert link into the database"
+msgstr "Could not insert link into the database"
+
+msgid "Unapprove"
+msgstr "Unapprove"
+
+msgid "Approve"
+msgstr "Approve"
+
+msgid "Restore"
+msgstr "Restore"
+
+msgid "Delete Permanently"
+msgstr "Delete Permanently"
+
+msgid "Move to Trash"
+msgstr "Move to Trash"
+
+msgid "Pings"
+msgstr "Pings"
+
+msgid "Empty Spam"
+msgstr "Empty Spam"
+
+msgid "Empty Trash"
+msgstr "Empty Trash"
+
+msgid "Author"
+msgstr "Author"
+
+msgid "%s ago"
+msgstr "%s ago"
+
+msgid "Y/m/d \a\t g:i A"
+msgstr "Y/m/d \a\t g:i A"
+
+msgid "Submitted on <a href="%1$s">%2$s at %3$s</a>"
+msgstr "Submitted on <a href="%1$s">%2$s at %3$s</a>"
+
+msgid "In reply to <a href="%1$s">%2$s</a>."
+msgstr "In reply to <a href="%1$s">%2$s</a>."
+
+msgid "Unapprove this comment"
+msgstr "Unapprove this comment"
+
+msgid "Approve this comment"
+msgstr "Approve this comment"
+
+msgid "Mark this comment as spam"
+msgstr "Mark this comment as spam"
+
+msgid "Move this comment to the trash"
+msgstr "Move this comment to the trash"
+
+msgid "Edit comment"
+msgstr "Edit comment"
+
+msgid "Quick Edit"
+msgstr "Quick Edit"
+
+msgid "Quick&nbsp;Edit"
+msgstr "Quick&nbsp;Edit"
+
+msgid "Reply to this comment"
+msgstr "Reply to this comment"
+
+msgid "Reply"
+msgstr "Reply"
+
+msgid "Y/m/d \a\t g:ia"
+msgstr "Y/m/d \a\t g:ia"
+
+msgid "Changing to %s"
+msgstr "Changing to %s"
+
+msgid "Found %s"
+msgstr "Found %s"
+
+msgid "The ftp PHP extension is not available"
+msgstr "The ftp PHP extension is not available"
+
+msgid "FTP hostname is required"
+msgstr "FTP hostname is required"
+
+msgid "FTP username is required"
+msgstr "FTP username is required"
+
+msgid "FTP password is required"
+msgstr "FTP password is required"
+
+msgid "Failed to connect to FTP Server %1$s:%2$s"
+msgstr "Failed to connect to FTP Server %1$s:%2$s"
+
+msgid "Username/Password incorrect for %s"
+msgstr "Username/Password incorrect for %s"
+
+msgid "The ssh2 PHP extension is not available"
+msgstr "The ssh2 PHP extension is not available"
+
+msgid "The ssh2 PHP extension is available, however, we require the PHP5 function <code>stream_get_contents()</code>"
+msgstr "The ssh2 PHP extension is available, however, we require the PHP5 function <code>stream_get_contents()</code>"
+
+msgid "SSH2 hostname is required"
+msgstr "SSH2 hostname is required"
+
+msgid "SSH2 username is required"
+msgstr "SSH2 username is required"
+
+msgid "SSH2 password is required"
+msgstr "SSH2 password is required"
+
+msgid "Failed to connect to SSH2 Server %1$s:%2$s"
+msgstr "Failed to connect to SSH2 Server %1$s:%2$s"
+
+msgid "Public and Private keys incorrect for %s"
+msgstr "Public and Private keys incorrect for %s"
+
+msgid "Unable to perform command: %s"
+msgstr "Unable to perform command: %s"
+
+msgid "View all categories"
+msgstr "View all categories"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Categories"
+msgstr "Categories"
+
+msgid "Relationship"
+msgstr "Relationship"
+
+msgid "Visible"
+msgstr "Visible"
+
+msgid "Edit &#8220;%s&#8221;"
+msgstr "Edit &#8220;%s&#8221;"
+
+msgid "You are about to delete this link '%s'\n  'Cancel' to stop, 'OK' to delete."
+msgstr "You are about to delete this link '%s'\n  'Cancel' to stop, 'OK' to delete."
+
+msgid "Visit %s"
+msgstr "Visit %s"
+
+msgid "Bulk Actions"
+msgstr "Bulk Actions"
+
+msgid "Apply"
+msgstr "Apply"
+
+msgid "%1$s %2$d"
+msgstr "%1$s %2$d"
+
+msgid "List View"
+msgstr "List View"
+
+msgid "Excerpt View"
+msgstr "Excerpt View"
+
+msgid "%s pending"
+msgstr "%s pending"
+
+msgid "Go to the first page"
+msgstr "Go to the first page"
+
+msgid "Go to the previous page"
+msgstr "Go to the previous page"
+
+msgid "Current page"
+msgstr "Current page"
+
+msgid "Go to the next page"
+msgstr "Go to the next page"
+
+msgid "Go to the last page"
+msgstr "Go to the last page"
+
+msgid "Attach to a post"
+msgstr "Attach to a post"
+
+msgid "Scan for lost attachments"
+msgstr "Scan for lost attachments"
+
+msgid "Y/m/d g:i:s A"
+msgstr "Y/m/d g:i:s A"
+
+msgid "%s from now"
+msgstr "%s from now"
+
+msgid "Trash"
+msgstr "Trash"
+
+msgid "View"
+msgstr "View"
+
+msgid "View &#8220;%s&#8221;"
+msgstr "View &#8220;%s&#8221;"
+
+msgid "Domain"
+msgstr "Domain"
+
+msgid "Last Updated"
+msgstr "Last Updated"
+
+msgid "Users"
+msgstr "Users"
+
+msgid "Actions"
+msgstr "Actions"
+
+msgid "Archived"
+msgstr "Archived"
+
+msgid "Deleted"
+msgstr "Deleted"
+
+msgid "Mature"
+msgstr "Mature"
+
+msgid "Dashboard"
+msgstr "Dashboard"
+
+msgid "You are about to activate the site %s"
+msgstr "You are about to activate the site %s"
+
+msgid "Activate"
+msgstr "Activate"
+
+msgid "You are about to deactivate the site %s"
+msgstr "You are about to deactivate the site %s"
+
+msgid "Deactivate"
+msgstr "Deactivate"
+
+msgid "You are about to unarchive the site %s."
+msgstr "You are about to unarchive the site %s."
+
+msgid "Unarchive"
+msgstr "Unarchive"
+
+msgid "You are about to archive the site %s."
+msgstr "You are about to archive the site %s."
+
+msgid "You are about to unspam the site %s."
+msgstr "You are about to unspam the site %s."
+
+msgid "You are about to mark the site %s as spam."
+msgstr "You are about to mark the site %s as spam."
+
+msgid "You are about to delete the site %s."
+msgstr "You are about to delete the site %s."
+
+msgid "Visit"
+msgstr "Visit"
+
+msgid "Never"
+msgstr "Never"
+
+msgid "Only showing first 5 users."
+msgstr "Only showing first 5 users."
+
+msgid "More"
+msgstr "More"
+
+msgid "Theme"
+msgstr "Theme"
+
+msgid "Enable"
+msgstr "Enable"
+
+msgid "Disable"
+msgstr "Disable"
+
+msgid "Network Enable"
+msgstr "Network Enable"
+
+msgid "Network Disable"
+msgstr "Network Disable"
+
+msgid "Enable this theme"
+msgstr "Enable this theme"
+
+msgid "Disable this theme"
+msgstr "Disable this theme"
+
+msgid "Open this theme in the Theme Editor"
+msgstr "Open this theme in the Theme Editor"
+
+msgid "Delete this theme"
+msgstr "Delete this theme"
+
+msgid "Broken Theme:"
+msgstr "Broken Theme:"
+
+msgid "Version %s"
+msgstr "Version %s"
+
+msgid "By %s"
+msgstr "By %s"
+
+msgid "Visit theme homepage"
+msgstr "Visit theme homepage"
+
+msgid "Visit Theme Site"
+msgstr "Visit Theme Site"
+
+msgid "Username"
+msgstr "Username"
+
+msgid "E-mail"
+msgstr "E-mail"
+
+msgid "Sites"
+msgstr "Sites"
+
+msgid "Super Admin"
+msgstr "Super Admin"
+
+msgid "Search Results"
+msgstr "Search Results"
+
+msgid "Upload"
+msgstr "Upload"
+
+msgid "Version"
+msgstr "Version"
+
+msgid "More information about %s"
+msgstr "More information about %s"
+
+msgid "Details"
+msgstr "Details"
+
+msgid "Install %s"
+msgstr "Install %s"
+
+msgid "Install Now"
+msgstr "Install Now"
+
+msgid "Update to version %s"
+msgstr "Update to version %s"
+
+msgid "Update Now"
+msgstr "Update Now"
+
+msgid "This plugin is already installed and is up to date"
+msgstr "This plugin is already installed and is up to date"
+
+msgid "Plugin"
+msgstr "Plugin"
+
+msgid "Network Activate"
+msgstr "Network Activate"
+
+msgid "Network Deactivate"
+msgstr "Network Deactivate"
+
+msgid "Clear List"
+msgstr "Clear List"
+
+msgid "Files in the <code>%s</code> directory are executed automatically."
+msgstr "Files in the <code>%s</code> directory are executed automatically."
+
+msgid "Drop-ins are advanced plugins in the <code>%s</code> directory that replace WordPress functionality when present."
+msgstr "Drop-ins are advanced plugins in the <code>%s</code> directory that replace WordPress functionality when present."
+
+msgid "Inactive:"
+msgstr "Inactive:"
+
+msgid "Requires <code>%s</code> in <code>wp-config.php</code>."
+msgstr "Requires <code>%s</code> in <code>wp-config.php</code>."
+
+msgid "Deactivate this plugin"
+msgstr "Deactivate this plugin"
+
+msgid "Activate this plugin for all sites in this network"
+msgstr "Activate this plugin for all sites in this network"
+
+msgid "Delete this plugin"
+msgstr "Delete this plugin"
+
+msgid "Activate this plugin"
+msgstr "Activate this plugin"
+
+msgid "Open this file in the Plugin Editor"
+msgstr "Open this file in the Plugin Editor"
+
+msgid "Visit author homepage"
+msgstr "Visit author homepage"
+
+msgid "Visit plugin site"
+msgstr "Visit plugin site"
+
+msgid "Tags"
+msgstr "Tags"
+
+msgid "Date"
+msgstr "Date"
+
+msgid "Edit this item"
+msgstr "Edit this item"
+
+msgid "Edit this item inline"
+msgstr "Edit this item inline"
+
+msgid "Restore this item from the Trash"
+msgstr "Restore this item from the Trash"
+
+msgid "Move this item to the Trash"
+msgstr "Move this item to the Trash"
+
+msgid "Delete this item permanently"
+msgstr "Delete this item permanently"
+
+msgid "Preview &#8220;%s&#8221;"
+msgstr "Preview &#8220;%s&#8221;"
+
+msgid "Preview"
+msgstr "Preview"
+
+msgid "Unpublished"
+msgstr "Unpublished"
+
+msgid "Missed schedule"
+msgstr "Missed schedule"
+
+msgid ", "
+msgstr ", "
+
+msgid "Bulk Edit"
+msgstr "Bulk Edit"
+
+msgid "&mdash; No Change &mdash;"
+msgstr "&mdash; No Change &mdash;"
+
+msgid "&ndash;OR&ndash;"
+msgstr "&ndash;OR&ndash;"
+
+msgid "Private"
+msgstr "Private"
+
+msgid "Main Page (no parent)"
+msgstr "Main Page (no parent)"
+
+msgid "Invalid taxonomy"
+msgstr "Invalid taxonomy"
+
+msgid "Slug"
+msgstr "Slug"
+
+msgid "Links"
+msgstr "Links"
+
+msgid "Posts"
+msgstr "Posts"
+
+msgid "Search"
+msgstr "Search"
+
+msgid "Try again"
+msgstr "Try again"
+
+msgid "This theme is already installed and is up to date"
+msgstr "This theme is already installed and is up to date"
+
+msgid "Preview %s"
+msgstr "Preview %s"
+
+msgid "Install"
+msgstr "Install"
+
+msgid "You only have one theme enabled for this site right now. Visit the Network Admin to <a href="%1$s">enable</a> or <a href="%2$s">install</a> more themes."
+msgstr "You only have one theme enabled for this site right now. Visit the Network Admin to <a href="%1$s">enable</a> or <a href="%2$s">install</a> more themes."
+
+msgid "You only have one theme enabled for this site right now. Visit the Network Admin to <a href="%1$s">enable</a> more themes."
+msgstr "You only have one theme enabled for this site right now. Visit the Network Admin to <a href="%1$s">enable</a> more themes."
+
+msgid "You only have one theme installed right now. Live a little! You can choose from over 1,000 free themes in the WordPress.org Theme Directory at any time: just click on the <a href="%s">Install Themes</a> tab above."
+msgstr "You only have one theme installed right now. Live a little! You can choose from over 1,000 free themes in the WordPress.org Theme Directory at any time: just click on the <a href="%s">Install Themes</a> tab above."
+
+msgid "Only the current theme is available to you. Contact the %s administrator for information about accessing additional themes."
+msgstr "Only the current theme is available to you. Contact the %s administrator for information about accessing additional themes."
+
+msgid "Activate &#8220;%s&#8221;"
+msgstr "Activate &#8220;%s&#8221;"
+
+msgid "Live Preview"
+msgstr "Live Preview"
+
+msgid "You are about to delete this theme '%s'\n  'Cancel' to stop, 'OK' to delete."
+msgstr "You are about to delete this theme '%s'\n  'Cancel' to stop, 'OK' to delete."
+
+msgid "The template files are located in <code>%2$s</code>. The stylesheet files are located in <code>%3$s</code>. <strong>%4$s</strong> uses templates from <strong>%5$s</strong>. Changes made to the templates will affect both themes."
+msgstr "The template files are located in <code>%2$s</code>. The stylesheet files are located in <code>%3$s</code>. <strong>%4$s</strong> uses templates from <strong>%5$s</strong>. Changes made to the templates will affect both themes."
+
+msgid "All of this theme&#8217;s files are located in <code>%2$s</code>."
+msgstr "All of this theme&#8217;s files are located in <code>%2$s</code>."
+
+msgid "Invalid Data provided."
+msgstr "Invalid Data provided."
+
+msgid "Could not access filesystem."
+msgstr "Could not access filesystem."
+
+msgid "Filesystem error."
+msgstr "Filesystem error."
+
+msgid "Unable to locate WordPress Root directory."
+msgstr "Unable to locate WordPress Root directory."
+
+msgid "Unable to locate WordPress Content directory (wp-content)."
+msgstr "Unable to locate WordPress Content directory (wp-content)."
+
+msgid "Unable to locate WordPress Plugin directory."
+msgstr "Unable to locate WordPress Plugin directory."
+
+msgid "Unable to locate WordPress Theme directory."
+msgstr "Unable to locate WordPress Theme directory."
+
+msgid "Unable to locate needed folder (%s)."
+msgstr "Unable to locate needed folder (%s)."
+
+msgid "Download failed."
+msgstr "Download failed."
+
+msgid "Installing the latest version&#8230;"
+msgstr "Installing the latest version&#8230;"
+
+msgid "Destination folder already exists."
+msgstr "Destination folder already exists."
+
+msgid "Could not create directory."
+msgstr "Could not create directory."
+
+msgid "The package could not be installed."
+msgstr "The package could not be installed."
+
+msgid "Enabling Maintenance mode&#8230;"
+msgstr "Enabling Maintenance mode&#8230;"
+
+msgid "Disabling Maintenance mode&#8230;"
+msgstr "Disabling Maintenance mode&#8230;"
+
+msgid "The plugin contains no files."
+msgstr "The plugin contains no files."
+
+msgid "The plugin is at the latest version."
+msgstr "The plugin is at the latest version."
+
+msgid "Update package not available."
+msgstr "Update package not available."
+
+msgid "Downloading update from <span class="code">%s</span>&#8230;"
+msgstr "Downloading update from <span class="code">%s</span>&#8230;"
+
+msgid "Unpacking the update&#8230;"
+msgstr "Unpacking the update&#8230;"
+
+msgid "Removing the old version of the plugin&#8230;"
+msgstr "Removing the old version of the plugin&#8230;"
+
+msgid "Could not remove the old plugin."
+msgstr "Could not remove the old plugin."
+
+msgid "Plugin update failed."
+msgstr "Plugin update failed."
+
+msgid "Plugin updated successfully."
+msgstr "Plugin updated successfully."
+
+msgid "Install package not available."
+msgstr "Install package not available."
+
+msgid "Downloading install package from <span class="code">%s</span>&#8230;"
+msgstr "Downloading install package from <span class="code">%s</span>&#8230;"
+
+msgid "Unpacking the package&#8230;"
+msgstr "Unpacking the package&#8230;"
+
+msgid "Installing the plugin&#8230;"
+msgstr "Installing the plugin&#8230;"
+
+msgid "Plugin install failed."
+msgstr "Plugin install failed."
+
+msgid "Plugin installed successfully."
+msgstr "Plugin installed successfully."
+
+msgid "No valid plugins were found."
+msgstr "No valid plugins were found."
+
+msgid "The theme is at the latest version."
+msgstr "The theme is at the latest version."
+
+msgid "Removing the old version of the theme&#8230;"
+msgstr "Removing the old version of the theme&#8230;"
+
+msgid "Could not remove the old theme."
+msgstr "Could not remove the old theme."
+
+msgid "Theme update failed."
+msgstr "Theme update failed."
+
+msgid "Theme updated successfully."
+msgstr "Theme updated successfully."
+
+msgid "Installing the theme&#8230;"
+msgstr "Installing the theme&#8230;"
+
+msgid "Theme install failed."
+msgstr "Theme install failed."
+
+msgid "Theme installed successfully."
+msgstr "Theme installed successfully."
+
+msgid "Successfully installed the theme <strong>%1$s %2$s</strong>."
+msgstr "Successfully installed the theme <strong>%1$s %2$s</strong>."
+
+msgid "This theme requires a parent theme. Checking if it is installed&#8230;"
+msgstr "This theme requires a parent theme. Checking if it is installed&#8230;"
+
+msgid "Preparing to install <strong>%1$s %2$s</strong>&#8230;"
+msgstr "Preparing to install <strong>%1$s %2$s</strong>&#8230;"
+
+msgid "The parent theme, <strong>%1$s %2$s</strong>, is currently installed."
+msgstr "The parent theme, <strong>%1$s %2$s</strong>, is currently installed."
+
+msgid "Successfully installed the parent theme, <strong>%1$s %2$s</strong>."
+msgstr "Successfully installed the parent theme, <strong>%1$s %2$s</strong>."
+
+msgid "<strong>The parent theme could not be found.</strong> You will need to install the parent theme, <strong>%s</strong>, before you can use this child theme."
+msgstr "<strong>The parent theme could not be found.</strong> You will need to install the parent theme, <strong>%s</strong>, before you can use this child theme."
+
+msgid "The theme is missing the <code>style.css</code> stylesheet."
+msgstr "The theme is missing the <code>style.css</code> stylesheet."
+
+msgid "The <code>style.css</code> stylesheet doesn't contain a valid theme header."
+msgstr "The <code>style.css</code> stylesheet doesn't contain a valid theme header."
+
+msgid "The theme is missing the <code>index.php</code> file."
+msgstr "The theme is missing the <code>index.php</code> file."
+
+msgid "WordPress is at the latest version."
+msgstr "WordPress is at the latest version."
+
+msgid "Could not copy files."
+msgstr "Could not copy files."
+
+msgid "Could not copy files. You may have run out of disk space."
+msgstr "Could not copy files. You may have run out of disk space."
+
+msgid "Update Plugin"
+msgstr "Update Plugin"
+
+msgid "Activate Plugin"
+msgstr "Activate Plugin"
+
+msgid "Go to plugins page"
+msgstr "Go to plugins page"
+
+msgid "Return to Plugins page"
+msgstr "Return to Plugins page"
+
+msgid "The update process is starting. This process may take a while on some hosts, so please be patient."
+msgstr "The update process is starting. This process may take a while on some hosts, so please be patient."
+
+msgid "An error occurred while updating %1$s: <strong>%2$s</strong>."
+msgstr "An error occurred while updating %1$s: <strong>%2$s</strong>."
+
+msgid "The update of %1$s failed."
+msgstr "The update of %1$s failed."
+
+msgid "%1$s updated successfully."
+msgstr "%1$s updated successfully."
+
+msgid "Show Details"
+msgstr "Show Details"
+
+msgid "Hide Details"
+msgstr "Hide Details"
+
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "Updating Plugin %1$s (%2$d/%3$d)"
+
+msgid "Go to WordPress Updates page"
+msgstr "Go to WordPress Updates page"
+
+msgid "Return to WordPress Updates"
+msgstr "Return to WordPress Updates"
+
+msgid "Updating Theme %1$s (%2$d/%3$d)"
+msgstr "Updating Theme %1$s (%2$d/%3$d)"
+
+msgid "Go to themes page"
+msgstr "Go to themes page"
+
+msgid "Return to Themes page"
+msgstr "Return to Themes page"
+
+msgid "Successfully installed the plugin <strong>%s %s</strong>."
+msgstr "Successfully installed the plugin <strong>%s %s</strong>."
+
+msgid "Activate Plugin &amp; Run Importer"
+msgstr "Activate Plugin &amp; Run Importer"
+
+msgid "Return to Importers"
+msgstr "Return to Importers"
+
+msgid "Return to Plugin Installer"
+msgstr "Return to Plugin Installer"
+
+msgid "Enable this theme for all sites in this network"
+msgstr "Enable this theme for all sites in this network"
+
+msgid "Return to Theme Installer"
+msgstr "Return to Theme Installer"
+
+msgid "Themes page"
+msgstr "Themes page"
+
+msgid "Update Theme"
+msgstr "Update Theme"
+
+msgid "Customize &#8220;%s&#8221;"
+msgstr "Customize &#8220;%s&#8221;"
+
+msgid "Customize"
+msgstr "Customize"
+
+msgid "Please select a file"
+msgstr "Please select a file"
+
+msgid "%1$s <span class="count">(%2$s)</span>"
+msgstr "%1$s <span class="count">(%2$s)</span>"
+
+msgid "Change"
+msgstr "Change"
+
+msgid "Role"
+msgstr "Role"
+
+msgid "Posts"
+msgstr "Posts"
+
+msgid "E-mail: %s"
+msgstr "E-mail: %s"
+
+msgid "View posts by this author"
+msgstr "View posts by this author"
+
+msgid "You are not allowed to edit comments on this post."
+msgstr "You are not allowed to edit comments on this post."
+
+
+
+
+
+msgid "Paypal Standard Payment Method Setting"
+msgstr "Paypal Standard Payment Method Setting"
+
+msgid "Testing Mode"
+msgstr "Testing Mode"
+
+msgid "Tax??"
+msgstr "Tax??"
+
+msgid "Paypal Standard"
+msgstr "Paypal Standard"
+
+msgid "CityLink Shipping Method Setting"
+msgstr "CityLink Shipping Method Setting"
+
+msgid "Citylink shipping method setting updated successfully"
+msgstr "Citylink shipping method setting updated successfully"
+
+msgid "text_title"
+msgstr "text_title"
+
+msgid "text_weight"
+msgstr "text_weight"
+
+msgid "Citylink Shipping Method"
+msgstr "Citylink Shipping Method"
+
+msgid "Flat Rate shipping method setting"
+msgstr "Flat Rate shipping method setting"
+
+msgid "flatrate shipping method setting updated successfully"
+msgstr "flatrate shipping method setting updated successfully"
+
+msgid "Flat Rate Shipping Method"
+msgstr "Flat Rate Shipping Method"
+
+msgid "ups shipping method setting updated successfully"
+msgstr "ups shipping method setting updated successfully"
+
+msgid "Enabled"
+msgstr "Enabled"
+
+msgid "Disabled"
+msgstr "Disabled"
+
+msgid "Select all"
+msgstr "Select all"
+
+msgid "Unselect all"
+msgstr "Unselect all"
+
+msgid "All Zones"
+msgstr "All Zones"
+
+msgid "UPS Next Day Air"
+msgstr "UPS Next Day Air"
+
+msgid "UPS Second Day Air"
+msgstr "UPS Second Day Air"
+
+msgid "UPS Ground"
+msgstr "UPS Ground"
+
+msgid "UPS Worldwide Express"
+msgstr "UPS Worldwide Express"
+
+msgid "UPS Worldwide Express Plus"
+msgstr "UPS Worldwide Express Plus"
+
+msgid "UPS Worldwide Expedited"
+msgstr "UPS Worldwide Expedited"
+
+msgid "UPS Express"
+msgstr "UPS Express"
+
+msgid "UPS Standard"
+msgstr "UPS Standard"
+
+msgid "UPS Three-Day Select"
+msgstr "UPS Three-Day Select"
+
+msgid "UPS Next Day Air Saver"
+msgstr "UPS Next Day Air Saver"
+
+msgid "UPS Next Day Air Early A.M."
+msgstr "UPS Next Day Air Early A.M."
+
+msgid "UPS Expedited"
+msgstr "UPS Expedited"
+
+
+msgid "UPS Second Day Air A.M."
+msgstr "UPS Second Day Air A.M."
+
+msgid "UPS Saver"
+msgstr "UPS Saver"
+
+msgid "UPS Express Early A.M."
+msgstr "UPS Express Early A.M."
+
+msgid "UPS Express Plus"
+msgstr "UPS Express Plus"
+
+msgid "UPS Today Standard"
+msgstr "UPS Today Standard"
+
+msgid "UPS Today Dedicated Courier"
+msgstr "UPS Today Dedicated Courier"
+
+msgid "UPS Today Intercity"
+msgstr "UPS Today Intercity"
+
+msgid "UPS Today Express"
+msgstr "UPS Today Express"
+
+msgid "Access Key:<span class="help">Enter the XML rates access key assigned to you by UPS.</span>"
+msgstr "Access Key:<span class="help">Enter the XML rates access key assigned to you by UPS.</span>"
+
+msgid "Username:<span class="help">Enter your UPS Services account username.</span>'"
+msgstr "Username:<span class="help">Enter your UPS Services account username.</span>'"
+
+msgid "Password:<span class="help">Enter your UPS Services account password.</span>"
+msgstr "Password:<span class="help">Enter your UPS Services account password.</span>"
+
+msgid "Pickup Method:<span class="help">How do you give packages to UPS (only used when origin is US)?</span>"
+msgstr "Pickup Method:<span class="help">How do you give packages to UPS (only used when origin is US)?</span>"
+
+msgid "Packaging Type:<span class="help">What kind of packaging do you use?</span>"
+msgstr "Packaging Type:<span class="help">What kind of packaging do you use?</span>"
+
+msgid "Customer Classification Code:<span class="help">01 - If you are billing to a UPS account and have a daily UPS pickup, 03 - If you do not have a UPS account or you are billing to a UPS account but do not have a daily pickup, 04 - If you are shipping from a retail outlet (only used when origin is US)</span>"
+msgstr "Customer Classification Code:<span class="help">01 - If you are billing to a UPS account and have a daily UPS pickup, 03 - If you do not have a UPS account or you are billing to a UPS account but do not have a daily pickup, 04 - If you are shipping from a retail outlet (only used when origin is US)</span>"
+
+msgid "Shipping Origin Code:<span class="help">What origin point should be used (this setting affects only what UPS product names are shown to the user)</span>"
+msgstr "Shipping Origin Code:<span class="help">What origin point should be used (this setting affects only what UPS product names are shown to the user)</span>"
+
+msgid "Origin City:<span class="help">Enter the name of the origin city.</span>"
+msgstr "Origin City:<span class="help">Enter the name of the origin city.</span>"
+
+msgid "Origin State/Province:<span class="help">Enter the two-letter code for your origin state/province.</span>"
+msgstr "Origin State/Province:<span class="help">Enter the two-letter code for your origin state/province.</span>"
+
+msgid "Origin Country:<span class="help">Enter the two-letter code for your origin country.</span>"
+msgstr "Origin Country:<span class="help">Enter the two-letter code for your origin country.</span>"
+
+msgid "Origin Zip/Postal Code:<span class="help">Enter your origin zip/postalcode.</span>"
+msgstr "Origin Zip/Postal Code:<span class="help">Enter your origin zip/postalcode.</span>"
+
+msgid "Test Mode:<span class="help">Use this module in Test (YES) or Production mode (NO)?</span>"
+msgstr "Test Mode:<span class="help">Use this module in Test (YES) or Production mode (NO)?</span>"
+
+msgid "Quote Type:<span class="help">Quote for Residential or Commercial Delivery.</span>"
+msgstr "Quote Type:<span class="help">Quote for Residential or Commercial Delivery.</span>"
+
+msgid "Services:<span class="help">Select the UPS services to be offered.</span>"
+msgstr "Services:<span class="help">Select the UPS services to be offered.</span>"
+
+msgid "Enable Insurance:<span class="help">Enables insurance with product total as the value</span>"
+msgstr "Enable Insurance:<span class="help">Enables insurance with product total as the value</span>"
+
+msgid "Display Delivery Weight:<br /><span class="help">Do you want to display the shipping weight? (e.g. Delivery Weight : 2.7674 Kg\'s)</span>"
+msgstr "Display Delivery Weight:<br /><span class="help">Do you want to display the shipping weight? (e.g. Delivery Weight : 2.7674 Kg\'s)</span>"
+
+msgid "Weight Class:<span class="help">Set to kilograms or pounds.</span>"
+msgstr "Weight Class:<span class="help">Set to kilograms or pounds.</span>"
+
+msgid "Length Class:<span class="help">Set to centimeters or inches.</span>"
+msgstr "Length Class:<span class="help">Set to centimeters or inches.</span>"
+
+msgid "Dimensions (L x W x H):<br /><span class="help">This is assumed to be your average packing box size. Individual item dimensions are not supported at this time so you must enter average dimensions like 5x5x5.</span>"
+msgstr "Dimensions (L x W x H):<br /><span class="help">This is assumed to be your average packing box size. Individual item dimensions are not supported at this time so you must enter average dimensions like 5x5x5.</span>"
+
+msgid "Tax Class:"
+msgstr "Tax Class:"
+
+msgid "Geo Zone:"
+msgstr "Geo Zone:"
+
+msgid "Sort Order:"
+msgstr "Sort Order:"
+
+msgid "Debug Mode:<br /><span class="help">Saves send/recv data to the system log</span>"
+msgstr "Debug Mode:<br /><span class="help">Saves send/recv data to the system log</span>"
+
+msgid "Daily Pickup"
+msgstr "Daily Pickup"
+
+msgid "Customer Counter"
+msgstr "Customer Counter"
+
+msgid "One Time Pickup"
+msgstr "One Time Pickup"
+
+msgid "On Call Air Pickup"
+msgstr "On Call Air Pickup"
+
+msgid "Letter Center"
+msgstr "Letter Center"
+
+msgid "Air Service Center"
+msgstr "Air Service Center"
+
+msgid "Suggested Retail Rates (UPS Store)"
+msgstr "Suggested Retail Rates (UPS Store)"
+
+msgid "Package"
+msgstr "Package"
+
+msgid "UPS Letter"
+msgstr "UPS Letter"
+
+msgid "UPS Tube"
+msgstr "UPS Tube"
+
+msgid "UPS Pak"
+msgstr "UPS Pak"
+
+msgid "UPS Express Box"
+msgstr "UPS Express Box"
+
+msgid "UPS 25kg box"
+msgstr "UPS 25kg box"
+
+msgid "UPS 10kg box"
+msgstr "UPS 10kg box"
+
+msgid "US Origin"
+msgstr "US Origin"
+
+msgid "Canada Origin"
+msgstr "Canada Origin"
+
+msgid "European Union Origin"
+msgstr "European Union Origin"
+
+msgid "Puerto Rico Origin"
+msgstr "Puerto Rico Origin"
+
+msgid "Mexico Origin"
+msgstr "Mexico Origin"
+
+msgid "All Other Origins"
+msgstr "All Other Origins"
+
+msgid "Residential"
+msgstr "Residential"
+
+msgid "Commercial"
+msgstr "Commercial"
+
+msgid "UPS shipping method setting"
+msgstr "UPS shipping method setting"
+
+msgid "text_us_origin_01"
+msgstr "text_us_origin_01"
+
+msgid "text_us_origin_02"
+msgstr "text_us_origin_02"
+
+msgid "text_us_origin_03"
+msgstr "text_us_origin_03"
+
+msgid "text_us_origin_07"
+msgstr "text_us_origin_07"
+
+msgid "text_us_origin_08"
+msgstr "text_us_origin_08"
+
+msgid "text_us_origin_11"
+msgstr "text_us_origin_11"
+
+msgid "text_us_origin_12"
+msgstr "text_us_origin_12"
+
+msgid "text_us_origin_13"
+msgstr "text_us_origin_13"
+
+msgid "text_us_origin_14"
+msgstr "text_us_origin_14"
+
+msgid "text_us_origin_54"
+msgstr "text_us_origin_54"
+
+msgid "text_us_origin_59"
+msgstr "text_us_origin_59"
+
+msgid "text_us_origin_65"
+msgstr "text_us_origin_65"
+
+msgid "text_ca_origin_01"
+msgstr "text_ca_origin_01"
+
+msgid "text_ca_origin_02"
+msgstr "text_ca_origin_02"
+
+msgid "text_ca_origin_07"
+msgstr "text_ca_origin_07"
+
+msgid "text_ca_origin_08"
+msgstr "text_ca_origin_08"
+
+msgid "text_ca_origin_11"
+msgstr "text_ca_origin_11"
+
+msgid "text_ca_origin_12"
+msgstr "text_ca_origin_12"
+
+msgid "text_ca_origin_13"
+msgstr "text_ca_origin_13"
+
+msgid "text_ca_origin_14"
+msgstr "text_ca_origin_14"
+
+msgid "text_ca_origin_54"
+msgstr "text_ca_origin_54"
+
+msgid "text_ca_origin_65"
+msgstr "text_ca_origin_65"
+
+msgid "text_eu_origin_07"
+msgstr "text_eu_origin_07"
+
+msgid "text_eu_origin_08"
+msgstr "text_eu_origin_08"
+
+msgid "text_eu_origin_11"
+msgstr "text_eu_origin_11"
+
+msgid "text_eu_origin_54"
+msgstr "text_eu_origin_54"
+
+msgid "text_eu_origin_65"
+msgstr "text_eu_origin_65"
+
+msgid "text_eu_origin_82"
+msgstr "text_eu_origin_82"
+
+msgid "text_eu_origin_83"
+msgstr "text_eu_origin_83"
+
+msgid "text_eu_origin_84"
+msgstr "text_eu_origin_84"
+
+msgid "text_eu_origin_85"
+msgstr "text_eu_origin_85"
+
+msgid "text_eu_origin_86"
+msgstr "text_eu_origin_86"
+
+msgid "text_pr_origin_01"
+msgstr "text_pr_origin_01"
+
+msgid "text_pr_origin_02"
+msgstr "text_pr_origin_02"
+
+msgid "text_pr_origin_03"
+msgstr "text_pr_origin_03"
+
+msgid "text_pr_origin_07"
+msgstr "text_pr_origin_07"
+
+msgid "text_pr_origin_08"
+msgstr "text_pr_origin_08"
+
+msgid "text_pr_origin_14"
+msgstr "text_pr_origin_14"
+
+msgid "text_pr_origin_54"
+msgstr "text_pr_origin_54"
+
+msgid "text_pr_origin_65"
+msgstr "text_pr_origin_65"
+
+msgid "text_mx_origin_07"
+msgstr "text_mx_origin_07"
+
+msgid "text_mx_origin_08"
+msgstr "text_mx_origin_08"
+
+msgid "text_mx_origin_54"
+msgstr "text_mx_origin_54"
+
+msgid "text_mx_origin_65"
+msgstr "text_mx_origin_65"
+
+msgid "text_other_origin_07"
+msgstr "text_other_origin_07"
+
+msgid "text_other_origin_08"
+msgstr "text_other_origin_08"
+
+msgid "text_other_origin_11"
+msgstr "text_other_origin_11"
+
+msgid "text_other_origin_54"
+msgstr "text_other_origin_54"
+
+msgid "text_other_origin_65"
+msgstr "text_other_origin_65"
+
+msgid "United Parcel Service"
+msgstr "United Parcel Service"
+
+msgid "Weight:"
+msgstr "Weight:"
+
+msgid "UPS Shipping Method"
+msgstr "UPS Shipping Method"
+
+msgid "Settings"
+msgstr "Settings"
+
+msgid "Cost"
+msgstr "Cost"
+
+msgid "Tax classes:"
+msgstr "Tax classes:"
+
+msgid "Geo Zones:"
+msgstr "Geo Zones:"
+
+msgid "Specification"
+msgstr "Specification"
+
+msgid "Related Products"
+msgstr "Related Products"
+
+msgid "Total coupon setting"
+msgstr "Total coupon setting"
+
+msgid "Total coupon setting updated successfully"
+msgstr "Total coupon setting updated successfully"
+
+msgid "Total credit setting"
+msgstr "Total credit setting"
+
+msgid "Total credit setting updated successfully"
+msgstr "Total credit setting updated successfully"
+
+msgid "Credit"
+msgstr "Credit"
+
+msgid "Credit Totals"
+msgstr "Credit Totals"
+
+msgid "Store Credit"
+msgstr "Store Credit"
+
+msgid "Total Credit"
+msgstr "Total Credit"
+
+msgid "Total handling setting"
+msgstr "Total handling setting"
+
+msgid "Total handling setting updated successfully"
+msgstr "Total handling setting updated successfully"
+
+msgid "handling"
+msgstr "handling"
+
+msgid "Handling Totals"
+msgstr "Handling Totals"
+
+msgid "Total impresscart_totals setting updated successfully"
+msgstr "Total impresscart_totals setting updated successfully"
+
+msgid "Total impresscart_totals"
+msgstr "Total impresscart_totals"
+
+msgid "Total Low Order Fee setting"
+msgstr "Total Low Order Fee setting"
+
+msgid "Total Low Order Fee setting updated successfully"
+msgstr "Total Low Order Fee setting updated successfully"
+
+msgid "Low Order Fee"
+msgstr "Low Order Fee"
+
+msgid "Low Order Fee Totals"
+msgstr "Low Order Fee Totals"
+
+msgid "Total Low Order Fee"
+msgstr "Total Low Order Fee"
+
+msgid "Order total setting"
+msgstr "Order total setting"
+
+msgid "Total ordertotal setting updated successfully"
+msgstr "Total ordertotal setting updated successfully"
+
+msgid "Order_Total"
+msgstr "Order_Total"
+
+msgid "Order_Total Totals"
+msgstr "Order_Total Totals"
+
+msgid "Total Order_Total"
+msgstr "Total Order_Total"
+
+msgid "Total reward setting"
+msgstr "Total reward setting"
+
+msgid "Total reward setting updated successfully"
+msgstr "Total reward setting updated successfully"
+
+msgid "Reward"
+msgstr "Reward"
+
+msgid "Reward Totals"
+msgstr "Reward Totals"
+
+msgid "Total Reward"
+msgstr "Total Reward"
+
+msgid "Shipping total setting"
+msgstr "Shipping total setting"
+
+msgid "Total Shipping_Total setting updated successfully"
+msgstr "Total Shipping_Total setting updated successfully"
+
+msgid "Shipping_Total"
+msgstr "Shipping_Total"
+
+msgid "Shipping_Total Totals"
+msgstr "Shipping_Total Totals"
+
+msgid "Total Shipping_Total"
+msgstr "Total Shipping_Total"
+
+msgid "Sub Total setting"
+msgstr "Sub Total setting"
+
+msgid "Total Sub_Total setting updated successfully"
+msgstr "Total Sub_Total setting updated successfully"
+
+msgid "Sub_Total"
+msgstr "Sub_Total"
+
+msgid "Sub Total"
+msgstr "Sub Total"
+
+msgid "Total Sub_Total"
+msgstr "Total Sub_Total"
+
+msgid "Total Tax setting"
+msgstr "Total Tax setting"
+
+msgid "Total Tax setting updated successfully"
+msgstr "Total Tax setting updated successfully"
+
+msgid "Tax Totals"
+msgstr "Tax Totals"
+
+msgid "Total Tax"
+msgstr "Total Tax"
+
+msgid "Total Voucher setting"
+msgstr "Total Voucher setting"
+
+msgid "Total Voucher setting updated successfully"
+msgstr "Total Voucher setting updated successfully"
+
+msgid "Voucher"
+msgstr "Voucher"
+
+msgid "Warning"
+msgstr "Warning"
+
+msgid "Total Voucher"
+msgstr "Total Voucher"
+
+msgid "Success: Your password has been successfully updated."
+msgstr "Success: Your password has been successfully updated."
+
+msgid "text_services"
+msgstr "text_services"
+
+msgid "text_thanks"
+msgstr "text_thanks"
+
+msgid "Impress Cart Setting"
+msgstr "Impress Cart Setting"
+
+msgid "Impress Cart"
+msgstr "Impress Cart"
+
+msgid "Payments"
+msgstr "Payments"
+
+msgid "Shippings"
+msgstr "Shippings"
+
+msgid "Impress Cart Settings"
+msgstr "Impress Cart Settings"
+
+msgid "Coupon Detail"
+msgstr "Coupon Detail"
+
+msgid "History"
+msgstr "History"
+
+msgid "Product Data"
+msgstr "Product Data"
+
+msgid "Images"
+msgstr "Images"
+
+msgid "Setting"
+msgstr "Setting"
+
+msgid "Order Data"
+msgstr "Order Data"
+
+msgid "Order Shipping"
+msgstr "Order Shipping"
+
+msgid "Order Payment"
+msgstr "Order Payment"
+
+msgid "Order Items"
+msgstr "Order Items"
+
+msgid "Return Data"
+msgstr "Return Data"
+
+msgid "Return Items"
+msgstr "Return Items"
+
+msgid "Currency Setting"
+msgstr "Currency Setting"
+
+msgid "Zone Setting"
+msgstr "Zone Setting"
+
+msgid "Geo Zones"
+msgstr "Geo Zones"
+
+msgid "Tax Rates"
+msgstr "Tax Rates"
+
+msgid "Tax Classes"
+msgstr "Tax Classes"
+
+msgid "Weight Classes"
+msgstr "Weight Classes"
+
+msgid "Length Classes"
+msgstr "Length Classes"
+
+msgid "Voucher Detail"
+msgstr "Voucher Detail"
+
+msgid "Voucher History'"
+msgstr "Voucher History'"
+
+msgid "Affiliate Details"
+msgstr "Affiliate Details"
+
+msgid "Payment Details"
+msgstr "Payment Details"
+
+msgid "All Statuses"
+msgstr "All Statuses"
+
+msgid "<input type="checkbox">"
+msgstr "<input type="checkbox">"
+
+msgid "Pending"
+msgstr "Pending"
+
+msgid "Type"
+msgstr "Type"
+
+msgid "Featured"
+msgstr "Featured"
+
+msgid "Class"
+msgstr "Class"
+
+msgid "Code:"
+msgstr "Code:"
+
+msgid "Discount"
+msgstr "Discount"
+
+msgid "Coupon ID"
+msgstr "Coupon ID"
+
+msgid "Affiliate Name:"
+msgstr "Affiliate Name:"
+
+msgid "Balance:"
+msgstr "Balance:"
+
+msgid "Approved:"
+msgstr "Approved:"
+
+msgid "This is where you can add new products to your store."
+msgstr "This is where you can add new products to your store."
+
+msgid "Add New Product"
+msgstr "Add New Product"
+
+msgid "Edit Product"
+msgstr "Edit Product"
+
+msgid "New Product"
+msgstr "New Product"
+
+msgid "View Product"
+msgstr "View Product"
+
+msgid "Search Products"
+msgstr "Search Products"
+
+msgid "No Products found"
+msgstr "No Products found"
+
+msgid "No Products found in trash"
+msgstr "No Products found in trash"
+
+msgid "Parent Product"
+msgstr "Parent Product"
+
+msgid "Manufacture"
+msgstr "Manufacture"
+
+msgid "Product Manufacture"
+msgstr "Product Manufacture"
+
+msgid "Search Product Manufactures"
+msgstr "Search Product Manufactures"
+
+msgid "All Product Manufactures"
+msgstr "All Product Manufactures"
+
+msgid "Edit Manufacture"
+msgstr "Edit Manufacture"
+
+msgid "Update Manufacture"
+msgstr "Update Manufacture"
+
+msgid "Add New Manufacture"
+msgstr "Add New Manufacture"
+
+msgid "New Manufacture"
+msgstr "New Manufacture"
+
+msgid "Product Category"
+msgstr "Product Category"
+
+msgid "Search Product Categories"
+msgstr "Search Product Categories"
+
+msgid "All Product Categories"
+msgstr "All Product Categories"
+
+msgid "Parent Product Category"
+msgstr "Parent Product Category"
+
+msgid "Parent Product Category:"
+msgstr "Parent Product Category:"
+
+msgid "Edit Product Category"
+msgstr "Edit Product Category"
+
+msgid "Update Product Category"
+msgstr "Update Product Category"
+
+msgid "Add New Product Category"
+msgstr "Add New Product Category"
+
+msgid "New Product Category Name"
+msgstr "New Product Category Name"
+
+msgid "Product Tag"
+msgstr "Product Tag"
+
+msgid "Search Product Tags"
+msgstr "Search Product Tags"
+
+msgid "All Product Tags"
+msgstr "All Product Tags"
+
+msgid "Parent Product Tag"
+msgstr "Parent Product Tag"
+
+msgid "Parent Product Tag:"
+msgstr "Parent Product Tag:"
+
+msgid "Edit Product Tag"
+msgstr "Edit Product Tag"
+
+msgid "Update Product Tag"
+msgstr "Update Product Tag"
+
+msgid "Add New Product Tag"
+msgstr "Add New Product Tag"
+
+msgid "New Product Tag Name"
+msgstr "New Product Tag Name"
+
+msgid "Groups"
+msgstr "Groups"
+
+msgid "Product Group"
+msgstr "Product Group"
+
+msgid "Search Product Groups"
+msgstr "Search Product Groups"
+
+msgid "All Product Groups"
+msgstr "All Product Groups"
+
+msgid "Parent Product Group"
+msgstr "Parent Product Group"
+
+msgid "Parent Product Group:"
+msgstr "Parent Product Group:"
+
+msgid "Edit Product Group"
+msgstr "Edit Product Group"
+
+msgid "Update Product Group"
+msgstr "Update Product Group"
+
+msgid "Add New Product Group"
+msgstr "Add New Product Group"
+
+msgid "New Product Group Name"
+msgstr "New Product Group Name"
+
+msgid "Attributes"
+msgstr "Attributes"
+
+msgid "Options"
+msgstr "Options"
+
+msgid "Currencies"
+msgstr "Currencies"
+
+msgid "Countries"
+msgstr "Countries"
+
+msgid "Zones"
+msgstr "Zones"
+
+msgid "Tax  Classes"
+msgstr "Tax  Classes"
+
+msgid "Measurement Units"
+msgstr "Measurement Units"
+
+msgid "Returns"
+msgstr "Returns"
+
+msgid "Coupons"
+msgstr "Coupons"
+
+msgid "Vouchers"
+msgstr "Vouchers"
+
+msgid "Shipping Methods"
+msgstr "Shipping Methods"
+
+msgid "Payment Methods"
+msgstr "Payment Methods"
+
+msgid "Total Calculation"
+msgstr "Total Calculation"
+
+msgid "Sale Tax"
+msgstr "Sale Tax"
+
+msgid "Sale Order"
+msgstr "Sale Order"
+
+msgid "Sale Coupon"
+msgstr "Sale Coupon"
+
+msgid "Sale Shipping"
+msgstr "Sale Shipping"
+
+msgid "Sale Return"
+msgstr "Sale Return"
+
+msgid "Product Views"
+msgstr "Product Views"
+
+msgid "Customer Order"
+msgstr "Customer Order"
+
+msgid "Customer Reward Points"
+msgstr "Customer Reward Points"
+
+msgid "Customer Credit"
+msgstr "Customer Credit"
+
+msgid "Data"
+msgstr "Data"
+
+msgid "Special"
+msgstr "Special"
+
+msgid "Out of stock"
+msgstr "Out of stock"
+
+msgid "available"
+msgstr "available"
+
+msgid " (backorders allowed)"
+msgstr " (backorders allowed)"
+
+msgid "Available on backorder"
+msgstr "Available on backorder"
+
+msgid "From:"
+msgstr "From:"
+
+msgid "Free!"
+msgstr "Free!"
+
+msgid "Voucher Theme"
+msgstr "Voucher Theme"
+
+msgid "Search Voucher Themes"
+msgstr "Search Voucher Themes"
+
+msgid "All Voucher Themes"
+msgstr "All Voucher Themes"
+
+msgid "Edit Voucher Theme"
+msgstr "Edit Voucher Theme"
+
+msgid "Update Voucher Theme"
+msgstr "Update Voucher Theme"
+
+msgid "Add New Voucher Theme"
+msgstr "Add New Voucher Theme"
+
+msgid "New Voucher Theme"
+msgstr "New Voucher Theme"
+
+msgid "impresscart"
+msgstr "impresscart"
+
+msgid "Account"
+msgstr "Account"
+
+msgid "account/account"
+msgstr "account/account"
+
+msgid "Customer Address"
+msgstr "Customer Address"
+
+msgid "account/address"
+msgstr "account/address"
+
+msgid "account/download"
+msgstr "account/download"
+
+msgid "Customer Edit"
+msgstr "Customer Edit"
+
+msgid "account/edit"
+msgstr "account/edit"
+
+msgid "Forgot Password"
+msgstr "Forgot Password"
+
+msgid "account/forgotten"
+msgstr "account/forgotten"
+
+msgid "account/login"
+msgstr "account/login"
+
+msgid "account/logout"
+msgstr "account/logout"
+
+msgid "account/newsletter"
+msgstr "account/newsletter"
+
+msgid "Customer Orders"
+msgstr "Customer Orders"
+
+msgid "account/order"
+msgstr "account/order"
+
+msgid "account/password"
+msgstr "account/password"
+
+msgid "account/register"
+msgstr "account/register"
+
+msgid "Product Return"
+msgstr "Product Return"
+
+msgid "account/return"
+msgstr "account/return"
+
+msgid "account/reward"
+msgstr "account/reward"
+
+msgid "Transaction"
+msgstr "Transaction"
+
+msgid "account/transaction"
+msgstr "account/transaction"
+
+msgid "Wish List"
+msgstr "Wish List"
+
+msgid "account/wishlist"
+msgstr "account/wishlist"
+
+msgid "Cart"
+msgstr "Cart"
+
+msgid "checkout/cart"
+msgstr "checkout/cart"
+
+msgid "checkout/checkout"
+msgstr "checkout/checkout"
+
+msgid "These are countries that you are willing to shop."
+msgstr "These are countries that you are willing to shop."
+
+msgid "These are region/state that you are willing to shop."
+msgstr "These are region/state that you are willing to shop."
+
+msgid "These are language that you are willing to shop."
+msgstr "These are language that you are willing to shop."
+
+msgid "These are administration language that you are willing to shop."
+msgstr "These are administration language that you are willing to shop."
+
+msgid "Change the default currency. Clear your browser cache to see the change and reset your existing cookie."
+msgstr "Change the default currency. Clear your browser cache to see the change and reset your existing cookie."
+
+msgid "These are decimal point."
+msgstr "These are decimal point."
+
+msgid "These are auto update currency."
+msgstr "These are auto update currency."
+
+msgid "These are length class."
+msgstr "These are length class."
+
+msgid "These are weight class."
+msgstr "These are weight class."
+
+msgid "These are default item per page(Catalog)."
+msgstr "These are default item per page(Catalog)."
+
+msgid "These are default item per page(Admin)."
+msgstr "These are default item per page(Admin)."
+
+msgid "These are display price with tax."
+msgstr "These are display price with tax."
+
+msgid "These are invoice prefix."
+msgstr "These are invoice prefix."
+
+msgid "These are login display price."
+msgstr "These are login display price."
+
+msgid "These are guest checkout."
+msgstr "These are guest checkout."
+
+msgid "These are account terms."
+msgstr "These are account terms."
+
+msgid "These are checkout terms."
+msgstr "These are checkout terms."
+
+msgid "These are affiliate terms."
+msgstr "These are affiliate terms."
+
+msgid "These are affiliate commission (%)."
+msgstr "These are affiliate commission (%)."
+
+msgid "These are display stock quantity."
+msgstr "These are display stock quantity."
+
+msgid "These are show out of stock warning."
+msgstr "These are show out of stock warning."
+
+msgid "These are out of stock checkout."
+msgstr "These are out of stock checkout."
+
+msgid "These are out of stock status."
+msgstr "These are out of stock status."
+
+msgid "These are order status."
+msgstr "These are order status."
+
+msgid "These are complete order status."
+msgstr "These are complete order status."
+
+msgid "These are return status."
+msgstr "These are return status."
+
+msgid "These are allow reviews."
+msgstr "These are allow reviews."
+
+msgid "These are allow downloads."
+msgstr "These are allow downloads."
+
+msgid "These are allow upload file extensions."
+msgstr "These are allow upload file extensions."
+
+msgid "These are Impresscart theme directory."
+msgstr "These are Impresscart theme directory."
+
+msgid "These are display weight on Cart Page."
+msgstr "These are display weight on Cart Page."
+
+msgid "These are mail sending method."
+msgstr "These are mail sending method."
+
+msgid "These are mail sender."
+msgstr "These are mail sender."
+
+msgid "These are SMTP host."
+msgstr "These are SMTP host."
+
+msgid "These are SMTP username."
+msgstr "These are SMTP username."
+
+msgid "These are SMTP passwaord."
+msgstr "These are SMTP passwaord."
+
+msgid "These are SMTP port."
+msgstr "These are SMTP port."
+
+msgid "These are new order alert email."
+msgstr "These are new order alert email."
+
+msgid "These are new account alert email."
+msgstr "These are new account alert email."
+
+msgid "These are enable ssl."
+msgstr "These are enable ssl."
+
+msgid "These are enable sef url."
+msgstr "These are enable sef url."
+
+msgid "These are google analytics code."
+msgstr "These are google analytics code."
+
+msgid "These are encryption key."
+msgstr "These are encryption key."
+
+msgid "These are display errors."
+msgstr "These are display errors."
+
+msgid "These are log errors."
+msgstr "These are log errors."
+
+msgid "These are error log filename."
+msgstr "These are error log filename."
+
+msgid "Processing"
+msgstr "Processing"
+
+msgid "Shipped"
+msgstr "Shipped"
+
+msgid "Complete"
+msgstr "Complete"
+
+msgid "Canceled"
+msgstr "Canceled"
+
+msgid "Denied"
+msgstr "Denied"
+
+msgid "Canceled Reversal"
+msgstr "Canceled Reversal"
+
+msgid "Failed"
+msgstr "Failed"
+
+msgid "Refunded"
+msgstr "Refunded"
+
+msgid "Reversed"
+msgstr "Reversed"
+
+msgid "Chargeback"
+msgstr "Chargeback"
+
+msgid "Expired"
+msgstr "Expired"
+
+msgid "Processed"
+msgstr "Processed"
+
+msgid "Voided"
+msgstr "Voided"
+
+msgid "2 - 3 Days"
+msgstr "2 - 3 Days"
+
+msgid "Out Of Stock (Default)"
+msgstr "Out Of Stock (Default)"
+
+msgid "Pre-Order"
+msgstr "Pre-Order"
+
+msgid "These are checkout."
+msgstr "These are checkout."
+
+msgid "These are checkout page."
+msgstr "These are checkout page."
+
+msgid "These are checkout page agian."
+msgstr "These are checkout page agian."
+
+msgid "These are thanks."
+msgstr "These are thanks."
+
+msgid "These are my account page."
+msgstr "These are my account page."
+
+msgid "These are affiliate page."
+msgstr "These are affiliate page."
+
+msgid "These are register."
+msgstr "These are register."
+
+msgid "These are whish list."
+msgstr "These are whish list."
+
+msgid "These are order."
+msgstr "These are order."
+
+msgid "These are downloads."
+msgstr "These are downloads."
+
+msgid "These are returns."
+msgstr "These are returns."
+
+msgid "Basic"
+msgstr "Basic"
+
+msgid "Bronze"
+msgstr "Bronze"
+
+msgid "Silver"
+msgstr "Silver"
+
+msgid "Gold"
+msgstr "Gold"
+
+msgid "Premium"
+msgstr "Premium"
+
+msgid "My Cart"
+msgstr "My Cart"
+
+msgid "Change Password"
+msgstr "Change Password"
+
+msgid "My Address"
+msgstr "My Address"
+
+msgid "My Wishlist"
+msgstr "My Wishlist"
+
+msgid "My Downloads"
+msgstr "My Downloads"
+
+msgid "Edit Account"
+msgstr "Edit Account"
+
+msgid "My Returns"
+msgstr "My Returns"
+
+msgid "My Transactions"
+msgstr "My Transactions"

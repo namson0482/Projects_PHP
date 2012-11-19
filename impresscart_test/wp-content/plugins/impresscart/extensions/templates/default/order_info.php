@@ -1,0 +1,1 @@
+[impresscart action="/account/order/info"]

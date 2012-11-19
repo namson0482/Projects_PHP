@@ -1,0 +1,385 @@
+.list {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.list td {
+  
+}
+.list thead td {
+    background-color: #EFEFEF;
+    padding: 0 10px;
+}
+.list thead td a, .list thead td {
+    color: #222222;
+    font-weight: bold;
+    text-decoration: none;
+}
+.list tbody td a {
+    text-decoration: underline;
+}
+.list tbody td {
+    background: none repeat scroll 0 0 #EFEFEF;
+    padding: 0 10px;
+    vertical-align: middle;
+}
+.list .left {
+    padding: 10px;
+    text-align: left;
+}
+.list .right {
+    padding: 7px;
+    text-align: right;
+}
+.list .center {
+    padding: 7px;
+    text-align: center;
+}
+.list .asc {
+    background: url("../../images/asc.png") no-repeat scroll right center transparent;
+    padding-right: 15px;
+}
+.list .desc {
+    background: url("../../images/desc.png") no-repeat scroll right center transparent;
+    padding-right: 15px;
+}
+.list .filter td {
+    background: none repeat scroll 0 0 #E7EFEF;
+    padding: 5px;
+}
+
+table.form {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+table.form > tbody > tr > td:first-child {
+    width: 200px;
+}
+
+table.form > tbody > tr > td {
+    color: #000000;
+    padding: 10px;
+}
+/*vnson define css*/
+
+.success {
+	padding: 10px 10px 10px 33px;
+	margin-bottom: 15px;
+	background: #EAF7D9 url('../../images/success.png') 10px center no-repeat;
+	border: 1px solid #BBDF8D;
+	color: #555555;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-khtml-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.box {
+
+	margin-bottom: 15px;
+
+}
+
+.box > .heading {
+
+	height: 38px;
+
+	padding-left: 7px;
+
+	padding-right: 7px;
+
+	border: 1px solid #DBDBDB;
+
+	background: url('../../images/box.png') repeat-x;
+
+	-webkit-border-radius: 7px 7px 0px 0px;
+
+	-moz-border-radius: 7px 7px 0px 0px;
+
+	-khtml-border-radius: 7px 7px 0px 0px;
+
+	border-radius: 7px 7px 0px 0px;
+
+}
+
+.box > .heading h1 {
+
+	margin: 0px;
+
+	padding: 11px 0px 0px 0px;
+
+	color: #003A88;
+
+	font-size: 16px;
+
+	float: left;
+
+}
+
+.box > .heading h1 img {
+
+	float: left;
+
+	margin-top: -1px;
+
+	margin-left: 3px;
+
+	margin-right: 8px;
+
+}
+
+.box > .heading .buttons {
+
+	float: right;
+
+	padding-top: 7px;
+
+	margin-right: 5px;
+
+}
+
+.box > .heading .buttons .button {
+
+	margin-left: 5px;
+
+}
+
+.box > .content {
+
+	padding: 10px;
+
+	border-left: 1px solid #CCCCCC;
+
+	border-right: 1px solid #CCCCCC;
+
+	border-bottom: 1px solid #CCCCCC;
+
+	min-height: 300px;
+
+	overflow: auto;
+
+}
+a, a:visited {
+
+	color: #003366;
+
+	cursor: pointer;
+}
+/* Add New Style for Admin*/
+/* Imcart*/
+#theme_options_form {
+	font-family:"Helvetica", Arial, sans-serif;
+	margin:5px 15px 0 5px;
+	color:#333;
+}
+#im_option_wrapper {
+	margin-top:15px;
+}
+#theme-options {
+	border-radius:0;
+	border:none;
+	color:#333!important;
+}
+
+h1.theme-title img {
+	margin-right:15px;
+	float:left;
+}
+#theme_options_form ul.im_option_menu {
+	position:absolute;
+	right:0;
+	float:none;
+	width:auto;
+	margin:20px 0;
+	border:none;
+	top:0;
+}
+#theme_options_form ul.im_option_menu li{
+	border-right:1px solid #427698;
+	padding:0 10px;
+	line-height:12px;
+	margin:0;
+	float:left;
+}
+#theme_options_form ul.im_option_menu li:last-child {
+	border:none;	
+}  
+#theme_options_form ul.im_option_menu li a {
+	text-transform:none;
+	color:#427698;
+	font-size:13px;
+}
+#theme-options ul.ui-tabs-nav {
+	border:none;
+	background:none;
+	border-radius:0;
+	margin:0;
+	padding:0;
+}
+#theme-options ul.ui-tabs-nav li {
+	border: medium none;
+    border-radius: 5px 5px 0 0;
+	background:#d6d6d6;
+	padding:3px 0;
+	margin:0 10px 0 0;
+}
+#theme-options ul.ui-tabs-nav .ui-state-active, #theme-options ul.ui-tabs-nav .ui-state-hover {
+	background:#efefef;
+}
+#theme-options ul.ui-tabs-nav li a {
+	text-shadow:none;
+	padding:6px 15px;
+	color:#666;
+	font-weight:bold;
+	font-size:14px;
+
+}
+#theme-options ul.ui-tabs-nav .ui-state-active a,  #theme-options ul.ui-tabs-nav .ui-state-hover a {
+	color:#f47121;
+	
+}
+#theme-options .option-tab {
+	background:#efefef;
+	position:relative;
+	border:none;
+	border-radius:0;
+}
+#theme-options .option-tab .group_options .form-field {
+	margin-bottom:10px;
+	line-height:30px;
+	position:relative;
+	min-height:30px;
+}
+#theme-options .option-tab .group_options .form-field label {
+}
+#theme-options .option-tab .group_options .form-field select, 
+#theme-options .option-tab .group_options .form-field input {
+	border-radius:3px;
+	border:1px solid #fff;
+	padding-top:3px;
+	min-height:27px;
+	position:relative;
+	color:#4d4d4d;
+	font-size:14px;
+	float:left;
+}
+#theme-options .option-tab .group_options .form-field select {
+	width:220px;
+}
+#theme-options .option-tab .group_options .form-field .styled-select select.add_selectmenu{
+	background: transparent;
+	-webkit-appearance: none;	
+}
+#theme-options .option-tab .group_options .form-field .styled-select{
+	float:left;
+	width:200px;	
+	border-radius:3px;
+	border:1px solid #d3d3d3;
+    overflow: hidden;
+    background: url("../../images/bg_menu_select.png") no-repeat scroll 95% center #fff;
+}
+#theme-options .option-tab .group_options .form-field input{
+	border:1px solid #d3d3d3;
+}
+
+.impresscart_tabs .ui-tabs-panel .styled-select select
+{
+	border-radius:3px;
+	border:1px solid #fff;
+	position:relative;
+	width:220px;
+	color:#4d4d4d;
+	font-size:14px;
+	right:20px;
+}
+
+.impresscart_tabs .ui-tabs-panel .styled-select  {
+	padding-left :20px;
+	float:left;
+	width:200px;	
+	border-radius:3px;
+	height:27px;
+	border:1px solid #d3d3d3;
+    overflow: hidden;
+    background: url("../../images/bg_menu_select.png") no-repeat scroll 95% center #fff;
+}
+.impresscart_tabs .ui-tabs-panel input  {
+	border:1px solid #d3d3d3;
+}
+.ui-state-default .ui-icon {
+    background: url(../../images/bg_menu_select.png) right center no-repeat;
+	
+}
+#theme-options .option-tab .group_options .form-field textarea {
+	border:1px solid #d3d3d3;
+	width:200px;
+	float:left;
+}
+#theme-options .option-tab .group_options .form-field select option {
+	padding-right:10px;
+}
+#theme-options h3.group_option {
+	margin-bottom:20px;
+	padding-bottom:10px;
+}
+#theme-options h3.group_option .group_label {
+	color:#333;
+	font-weight:bold;
+	font-size:14px;
+}
+#theme-options h3.group_option a {
+	margin-right:10px;
+	position:relative;
+	z-index:5;
+}
+#theme-options h3.group_option span {
+	float:none;
+	cursor:pointer;
+}
+#theme-options div.group_options {
+	padding:10px;
+}
+
+.form-button {
+	margin:0;
+	padding:10px;
+}
+.form-button input {
+	border-radius:10px;
+	border:1px solid #666;
+	padding:5px 15px;
+}
+/* Category*/
+
+.ui-selectmenu {
+	width:150px;
+}
+.itmarket_tabs {
+	border-radius:0;
+	background:none;
+	font-family:"Helvetica", Arial, sans-serif;
+	border:none;
+	font-size:14px;
+}
+.itmarket_tabs #Data {
+	background:#EFEFEF;
+}
+
+div.impresscart_header
+{
+	background: url('../../images/logo_01.png') no-repeat;
+	overflow: hidden;
+	height:90px;
+	margin-bottom:5px;
+}
+
+div.impresscart_header h1.theme-title
+{
+	padding-top:10px;
+	padding-left:260px;	
+}
+
+
+/* End Add New Style for Admin*/
