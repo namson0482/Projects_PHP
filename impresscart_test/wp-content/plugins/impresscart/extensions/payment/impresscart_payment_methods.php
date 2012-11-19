@@ -22,7 +22,6 @@ class impresscart_payment_methods
 					}
 				}			
 			}
-			
 			return $enabled_payment_methods;
 		}
 		
