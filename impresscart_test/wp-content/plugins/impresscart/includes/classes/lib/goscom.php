@@ -77,6 +77,14 @@ class Goscom {
 	}
 	
 	
+	public static function generateHeader($logo, $pages) {
+		$html = '<div>';
+		$html .= '<img src=' . $logo .'>'; 
+		$html .= self::generateMenu($pages);
+		$html .= '</div>';
+		return $html; 
+	}
+	
 	public static function generateMenu($pages, $breakDown = 3) {
 		$html = '<ul class="sf-menu">';
 		
@@ -85,7 +93,7 @@ class Goscom {
 		}
 		$html .= '</ul>';
 		for($i=0;$i<$breakDown;$i++) {
-			$html .= '<br/>';
+			//$html .= '<br/>';
 		}
 		return $html;
 	}

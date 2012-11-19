@@ -369,9 +369,15 @@ h1.theme-title img {
 
 div.impresscart_header
 {
-	background: url('../../images/logo_01.png') no-repeat;
+	background: url('../../images/impresscart_logo.png') no-repeat;
 	overflow: hidden;
-	height:90px;
+	margin-bottom:5px;
+}
+
+.impresscart_header_img
+{
+	src : url('../../images/impresscart_logo.png');
+	overflow: hidden;
 	margin-bottom:5px;
 }
 
