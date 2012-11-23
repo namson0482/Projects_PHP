@@ -79,9 +79,16 @@ ul.sf-menu li li li.sfHover ul {
 }
 .sf-menu  ul li  a{
 	font-weight:normal;
-} 
+}
+.tabs-right .sf-menu  ul li  a,.tabs-right .sf-menu  ul li  a:hover{
+	color:#218ecf;
+	line-height:25px;
+}
+.tabs-right .sf-menu  ul li:hover{
+background:#eaf2fa;
+}
 .sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
-	color:			#13a;
+	color:			#218ecf;
 	
 }
 .sf-menu li {
@@ -182,4 +189,3 @@ li.sfHover > a > .sf-sub-indicator {
 .test_ul {
 	background-image: url('triangle_grey.png') no-repeat ;
 }
-

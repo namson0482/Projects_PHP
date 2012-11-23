@@ -27,7 +27,6 @@ class impresscart_admin_citylink_controller extends impresscart_framework_contro
 	      	} else {
 	      		
 	     		$tax_classes_html .= "<option value='".$row->tax_class_id."'>".$row->title."</option>";
-	     			
 	     	}
 	      
 	    }

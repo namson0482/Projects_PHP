@@ -1,68 +1,102 @@
-<div class="impresscart_header">
-<h1 class="theme-title"><?php echo @$tax->tax_class_id ? 'Edit Tax Class' : 'Add  Tax Class'; ?></h1>
-</div>
-<?php $rate_options = '';?>
-<?php foreach($rates as $rate) : ?>
-<?php $rate_options .= '<option value="' . $rate->tax_rate_id . '">' . $rate->name . '</option>';?>
-<?php endforeach;?>
+<?php 
+include IMPRESSCART_CLASSES . '/impresscart-menu.php';
+?>
+<?php
+	$rate_options = '';
+	foreach($rates as $rate) :
+	$rate_options .= '<option value="' . $rate->tax_rate_id . '">' . $rate->name . '</option>';
+	endforeach
+?>
 
-<script language="javascript">
+<script type="text/javascript">
 	// script data
 	var rate_options = <?php echo json_encode($rate_options);?>;
 	var base_options = '<option value="shipping">Shipping Address</option>'
 						+ '<option value="payment">Payment Address</option>'
 						+ '<option value="store" selected="selected">Store Address</option>';
 	var rule_index = <?php echo !empty($rules) ? count($rules) : 1?>;
-
 </script>
 
 <div class="wrap">
-	<h2>		
-		<a class="add-new-h2" href="<?php echo $framework->buildURL('/admin/localization/taxes_index')?>">Back to List</a>
-	</h2>
+	
 	<?php if(!empty($errors)) : ?>
-	<div style="background:yellow;color:red;border-radius:5px;display:block-inline;padding:5px;"><?php echo $errors?></div>
+		<div style="background:yellow;color:red;border-radius:5px;display:block-inline;padding:5px;"><?php echo $errors?></div>
 	<?php endif;?>
+	
 	<div class="form-wrap">
 		<form method="post">
-			<table border="0" cellspacing="0" cellpadding="5">
-				<tr>
-					<td>
-						<div class="form-field form-required">
+		
+			<table style="border-spacing: 0; border-collapse: collapse;"
+				class="wp-list-table widefat fixed pages">
+				<thead>
+					<tr>
+						<th colspan="2" style="border: 1px;">
+							<h2>
+								<?php echo @$tax->tax_rate_id ? 'Edit Tax Rate' : 'Add  Tax Rate'; ?>
+							</h2>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td colspan="2">
+						<input type="button" name="backtolist"
+							id="backtolist" class="button" value="Back to list" /> <input
+							type="hidden" id="backaddress" name="backaddress"
+							value="<?php echo $framework->buildURL('/admin/localization/taxes_index')?>">
+						</td>
+					</tr>
+					<tr>
+						<td class='widefat_extend'>
 							<label for="title">Title</label>
+							<p style="color: #C3C3C3;">The name of the tax class.</p>
+						</td>
+						<td class='widefat_extend'>
 							<input type="text" name="title" value="<?php echo @$tax->title?>" size="50"/>
-							<p>The name of the tax class.</p>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="form-field form-required">
-							<label for="name">Description</label>
-							<textarea type="text" name="description" cols="100" rows="2"><?php echo @$tax->description?></textarea>
-							<p>The description of the tax class.</p>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="form-field form-required" id="geo_zone_container">
-							<label for="name">Countries and Zones</label>
+						</td>
+					</tr>
 
+					<tr>
+						<td class='widefat_extend'>
+							<label for="name">Description</label>
+							<p style="color: #C3C3C3;">The description of the tax class.</p>
+						</td>
+						<td class='widefat_extend'>
+							<textarea name="description" cols="96" rows="2"><?php echo @$tax->description?></textarea>
+							
+						</td>
+					</tr>
+
+					<tr>
+						<td class='widefat_extend'>
+						
+							<label for="name">Countries and Zones</label>
+							
+						</td>
+
+						<td class='widefat_extend'>
+							
+						</td>
+					</tr>
+
+					<tr>
+						<td colspan="2">
 							<table class="wp-list-table widefat fixed pages" cellspacing="0">
 								<thead>
-									<th>
-										Tax Rate
-									</th>
-									<th>
-										Based On
-									</th>
-									<th>
-										Priority
-									</th>
-									<th width="150">&nbsp;
-										
-									</th>
+									<tr>
+										<th>
+											Tax Rate
+										</th>
+										<th>
+											Based On
+										</th>
+										<th>
+											Priority
+										</th>
+										<th width="150">&nbsp;
+											
+										</th>
+									</tr>
 								</thead>
 								<tbody id="geo_zone_container_list">
 									<?php $i = 0;?>
@@ -87,34 +121,52 @@
 									<?php endif;?>
 								</tbody>
 								<tfoot>
-									<th>
-										Tax Rate
-									</th>
-									<th >
-										Based On
-									</th>
-									<th>
-										Priority
-									</th>
-									<th >
-										<a class="add right" href="#randomize">Add Rule</a>
-									</th>
+									<tr>
+										<th>
+											Tax Rate
+										</th>
+										<th >
+											Based On
+										</th>
+										<th>
+											Priority
+										</th>
+										<th >
+											<a class="add right" href="#randomize">Add Rule</a>
+										</th>
+									</tr>
 								</tfoot>
-							</table>
-
-							<p>The countries and zones covered by this geo zone.</p>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td><input type="submit" name="submit" 	class="button" value="Save Tax Class" /></td>
-				</tr>
+							</table>	
+							<p style="color: #C3C3C3;">The countries and zones covered by this geo zone.</p>						
+						</td>
+					</tr>
+					
+					
+					<tr>
+						<td colspan="2" class='widefat_extend'>
+							<input type="submit" name="submit" 	class="button" value="Save Tax Rate" />
+						</td>
+					</tr>
+				</tbody>
 			</table>
+			
+			<!-- ************************************************************ -->
 		</form>
 	</div>
 </div>
 
-<script language="javascript">
+<script type="text/javascript"><!--
+
+jQuery('#backtolist').bind('click', function() {
+	  //alert('User clicked on "foo."');
+	  //window.history.back(-1);
+	  window.location.href = jQuery('#backaddress').val();
+	  return false;
+});
+
+//--></script>
+
+<script type="text/javascript">
 		jQuery(function(){
 
 			jQuery('#geo_zone_container')

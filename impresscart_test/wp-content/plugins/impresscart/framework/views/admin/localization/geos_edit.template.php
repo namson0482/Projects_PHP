@@ -1,82 +1,80 @@
-<div class="impresscart_header">
-<h1 class="theme-title"><?php echo @$geo->geo_zone_id ? 'Edit Geo Zone' : 'Add  Geo Zone'; ?></h1>
-</div>
-<?php $country_options = '';?>
-<?php foreach($countries as $country) : ?>
-<?php $country_options .= '<option value="' . $country->country_id . '">' . $country->name . '</option>';?>
-<?php endforeach;?>
+<?php 
+include IMPRESSCART_CLASSES . '/impresscart-menu.php';
 
-<script language="javascript">
-	// script data
-	var country_options = <?php echo json_encode($country_options);?>;
-	var countries = <?php echo json_encode($countries);?>;
-	var country_zones = {};
-	var zone_index = <?php echo !empty($zones) ? count($zones) : 1?>;
-
-	function getCountryZones(countryID){
-		if(typeof country_zones[countryID] != 'undefined'){
-			return country_zones[countryID];
-		}
-		jQuery.ajax({
-			url : 'admin-ajax.php',
-			async : false,
-			data : {
-				action : 'framework',
-				fwurl : '/admin/localization/country_zones_html_options',
-				country_id : countryID
-			},
-			success : function(html){
-				country_zones[countryID] = html;
-			}
-		});
-		return country_zones[countryID];
-	}
-</script>
-
+$country_options = '';
+foreach($countries as $country) :
+	$country_options .= '<option value="' . $country->country_id . '">' . $country->name . '</option>';
+endforeach;
+?>
 <div class="wrap">
-	<h2>		
-		<a class="add-new-h2" href="<?php echo $framework->buildURL('/admin/localization/geos_index')?>">Back to List</a>
-	</h2>
 	<?php if(!empty($errors)) : ?>
 	<div style="background:yellow;color:red;border-radius:5px;display:block-inline;padding:5px;"><?php echo $errors?></div>
 	<?php endif;?>
 	<div class="form-wrap">
 		<form method="post">
-			<table border="0" cellspacing="0" cellpadding="5">
-				<tr>
-					<td>
-						<div class="form-field form-required">
+				
+				<table style="border-spacing:0;  border-collapse:collapse;" class="wp-list-table widefat fixed pages">
+				<thead>
+					<tr>
+						<th colspan="2" style="border: 1px;">
+								<h2>
+									Add Geo Zone
+								</h2>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td colspan="2">
+							<input type="button" name="backtolist" id="backtolist" class="button" value="Back to list" />
+							<input type="hidden" id="backaddress" name="backaddress" value="<?php echo $framework->buildURL('/admin/localization/geos_index')?>">
+						</td>
+					</tr>
+					<tr>
+						<td class='widefat_extend'>
 							<label for="name">Name</label>
+							<p style="color : #C3C3C3;">The name of the geo zone.</p>
+						
+						</td>
+						<td class='widefat_extend' >
 							<input type="text" name="name" value="<?php echo @$geo->name?>" size="50"/>
-							<p>The name of the geo zone.</p>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="form-field form-required">
-							<label for="name">Description</label>
-							<textarea type="text" name="description" cols="100" rows="2"><?php echo @$geo->description?></textarea>
-							<p>The description of the geo zone.</p>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="form-field form-required" id="country_and_zone">
-							<label for="name">Countries and Zones</label>
+						</td>
+					</tr>
 
+					<tr>
+						<td class='widefat_extend'>
+							<label for="name">Description</label>
+							
+							<p style="color : #C3C3C3;">The description of the geo zone.</p>
+						</td>
+						<td class='widefat_extend'>
+							<textarea name="description" cols="96" rows="2"><?php echo @$geo->description?></textarea>
+						</td>
+					</tr>
+
+					<tr>
+						<td class='widefat_extend'>
+							<label for="name">Countries and Zones</label>
+						</td>
+						<td class='widefat_extend'>
+						</td>
+					</tr>
+					
+					<tr>
+						<td colspan="2" class='widefat_extend'>
 							<table class="wp-list-table widefat fixed pages" cellspacing="0">
 								<thead>
-									<th>
-										Country
-									</th>
-									<th>
-										Zone
-									</th>
-									<th width="150">
-										&nbsp;
-									</th>
+									<tr>
+										<th>
+											Country
+										</th>
+										<th>
+											Zone
+										</th>
+										<th width="150">
+											&nbsp;
+										</th>
+									</tr>
 								</thead>
 								<tbody id="country_and_zone_list">
 									<?php $i = 0;?>
@@ -98,31 +96,77 @@
 									<?php endif;?>
 								</tbody>
 								<tfoot>
-									<th>
-										Country
-									</th>
-									<th >
-										Zone
-									</th>
-									<th >
-										<a class="add right" href="#randomize">Add Country/Zone</a>
-									</th>
+									<tr>
+										<th>
+											Country
+										</th>
+										<th >
+											Zone
+										</th>
+										<th >
+											<a class="add right" href="#randomize">Add Country/Zone</a>
+										</th>
+									</tr>
 								</tfoot>
 							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class='widefat_extend'>
+							<p style="color : #C3C3C3;">The countries and zones covered by this geo zone.</p>
+						</td>
+						<td class='widefat_extend'>
+						</td>
+					</tr>
 
-							<p>The countries and zones covered by this geo zone.</p>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td><input type="submit" name="submit" 	class="button" value="Save Geo Zone" /></td>
-				</tr>
+					<tr>
+						<td colspan="2" class='widefat_extend'>
+							<input type="submit" name="submit" 	class="button" value="Save Geo Zone" />
+						</td>
+					</tr>
+				</tbody>
 			</table>
+			<!-- **************************************************************** -->
+		
 		</form>
 	</div>
 </div>
 
-<script language="javascript">
+
+<script type="text/javascript">
+
+jQuery('#backtolist').bind('click', function() {
+	  //alert('User clicked on "foo."');
+	  //window.history.back(-1);
+	  window.location.href = jQuery('#backaddress').val();
+	  return false;
+});
+
+
+//script data
+var country_options = <?php echo json_encode($country_options);?>;
+var countries = <?php echo json_encode($countries);?>;
+var country_zones = {};
+var zone_index = <?php echo !empty($zones) ? count($zones) : 1?>;
+
+function getCountryZones(countryID){
+	if(typeof country_zones[countryID] != 'undefined'){
+		return country_zones[countryID];
+	}
+	jQuery.ajax({
+		url : 'admin-ajax.php',
+		async : false,
+		data : {
+			action : 'framework',
+			fwurl : '/admin/localization/country_zones_html_options',
+			country_id : countryID
+		},
+		success : function(html){
+			country_zones[countryID] = html;
+		}
+	});
+	return country_zones[countryID];
+}
 		jQuery(function(){
 
 			jQuery('#country_and_zone')

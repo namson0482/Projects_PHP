@@ -69,6 +69,7 @@ class impresscart_admin_localization_controller extends impresscart_framework_co
 		}
 		$this->data['country'] = $obj;
 		$this->data['errors'] = @implode('<br/>', $errors);
+		$this->data['pages'] = apply_filters('impresscart_administration_pages', array());
 	}
 
 	public function countries_delete(){
@@ -133,6 +134,7 @@ class impresscart_admin_localization_controller extends impresscart_framework_co
 		$this->data['zone'] = $obj;
 		$this->data['countries'] = impresscart_framework::table('country')->fetchAll(array('order' => 'name ASC'));		
 		$this->data['errors'] = @implode('<br/>', $errors);
+		$this->data['pages'] = apply_filters('impresscart_administration_pages', array());
 	}
 
 	public function country_zones_delete(){
@@ -204,6 +206,7 @@ class impresscart_admin_localization_controller extends impresscart_framework_co
 		}
 		$this->data['errors'] = @implode('<br/>', $errors);
 		$this->data['countries'] = impresscart_framework::table('country')->fetchAll();
+		$this->data['pages'] = apply_filters('impresscart_administration_pages', array());
 		
 	}
 	
@@ -248,7 +251,7 @@ class impresscart_admin_localization_controller extends impresscart_framework_co
 	}
 
 	public function taxes_rate_edit(){
-		//print_r($_POST);die();
+		
 		$ID = @$_GET['ID'];
 		if ($this->isPost()) {
 			$_POST['tax_rate_id'] = $ID;
@@ -256,9 +259,7 @@ class impresscart_admin_localization_controller extends impresscart_framework_co
 
 			// check duplicate
 			$errors = array();
-
 			$taxModel = impresscart_framework::table('tax_rate');
-
 			if (empty($errors)) {
 				$tax = $_POST;
 				$taxModel->save($tax);
@@ -276,6 +277,7 @@ class impresscart_admin_localization_controller extends impresscart_framework_co
 		$this->data['tax'] = $obj;
 		$this->data['errors'] = @implode('<br/>', $errors);
 		$this->data['geos'] = impresscart_framework::table('geo_zone')->fetchAll();
+		$this->data['pages'] = apply_filters('impresscart_administration_pages', array());
 	}
 
 	public function taxes_rate_delete() {
@@ -301,8 +303,6 @@ class impresscart_admin_localization_controller extends impresscart_framework_co
 			// check duplicate
 			$errors = array();
 			$taxModel = impresscart_framework::table('tax_class');
-			
-			
 			
 			$tax = $taxModel->fetchOne(array('conditions' => array(
 										'title' => $_POST['title'],
@@ -334,10 +334,7 @@ class impresscart_admin_localization_controller extends impresscart_framework_co
 		}
 		$this->data['errors'] = @implode('<br/>', $errors);
 		$this->data['rates']	= impresscart_framework::table('tax_rate')->fetchAll();
-		
-		
-		
-		
+		$this->data['pages'] = apply_filters('impresscart_administration_pages', array());
 		
 	}
 	
@@ -419,6 +416,7 @@ class impresscart_admin_localization_controller extends impresscart_framework_co
 		}
 		$this->data['row'] = $obj;
 		$this->data['errors'] = @implode('<br/>', $errors);
+		$this->data['pages'] = apply_filters('impresscart_administration_pages', array());
 	}
 	
 	/**
@@ -437,7 +435,6 @@ class impresscart_admin_localization_controller extends impresscart_framework_co
 	function currencies_index() {
 		$this->data['list'] = impresscart_framework::table('currency')->fetchAll();
 		$this->data['pages'] = apply_filters('impresscart_administration_pages', array());
-		
 	}
 	
 	function currencies_delete() {
@@ -490,6 +487,7 @@ class impresscart_admin_localization_controller extends impresscart_framework_co
 		}
 		$this->data['row'] = $obj;
 		$this->data['errors'] = @implode('<br/>', $errors);
+		$this->data['pages'] = apply_filters('impresscart_administration_pages', array());
 	}
 	
 	

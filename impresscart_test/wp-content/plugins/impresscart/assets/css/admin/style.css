@@ -403,3 +403,39 @@ div.impresscart_header h1.theme-title
 
 /* End Add New Style for Admin*/
 
+/* Table add new item */
+/*
+.wp-add-newitem-table .site-deleted{background:#ff8573}
+
+.wp-add-newitem-table .site-spammed{background:#faafaa}
+
+.wp-add-newitem-table .site-archived{background:#ffebe8}
+
+.wp-add-newitem-table .site-mature{background:#fecac2}
+
+
+
+table.fixed {
+    table-layout: fixed;
+}
+.widefat {
+    background-color: #F9F9F9;
+    border-color: #DFDFDF;
+}
+.widefat {
+    border-spacing: 0;
+    clear: both;
+    margin: 0;
+    width: 100%;
+}
+*/
+
+.widefat_extend {
+    border-style: solid;
+    border-width: 0px 0 !important;
+}
+th.top-title
+
+
+/* End Table add new item */
+

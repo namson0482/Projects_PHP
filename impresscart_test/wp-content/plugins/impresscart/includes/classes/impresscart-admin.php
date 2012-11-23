@@ -146,7 +146,7 @@ class impresscart_admin {
 		
 		//This css is used for Admin -> Administrator
 		wp_enqueue_style('superfish', IMPRESSCART_CSS . '/admin/superfish.css');
-		wp_enqueue_style('tooltipcss', IMPRESSCART_CSS . '/admin/atooltip.css');
+		//wp_enqueue_style('tooltipcss', IMPRESSCART_CSS . '/admin/atooltip.css');
 		
 	}
 
@@ -293,6 +293,9 @@ class impresscart_admin {
 		$tabs_html .= "</ul>";
 
 		// menu
+		$pages = apply_filters('impresscart_administration_pages', array());
+		$temp_menu = Goscom::generateHeader($pages);
+		
 		$menu = '';
 		$final_html = '';
 		$menu .= "
@@ -302,9 +305,10 @@ class impresscart_admin {
                 <li><a href=\"http://support.impressthemes.com/\">Support</a></li>
                 <li><a href=\"http://impressthemes.com/affiliates-2/\">Affiliate Program</a></li>
             </ul>";
+		
+		$final_html .= "" . $temp_menu . "<br> <h2>ImpressCart Settings</h2>" ;
 		$final_html .= "<form action=\"\" method=\"post\" name=\"theme_options_form\" id=\"theme_options_form\" enctype=\"multipart/form-data\">";
-		$final_html .= "<div class=\"impresscart_header\">
-<h1 class=\"theme-title\">" . __('Impress Cart Settings') . "</h1></div>";
+		
 		$final_html .= $message;
 		$final_html .= "<div id=\"im_option_loading\">Loading options...</div>";
 		$final_html .= "<div id=\"im_option_wrapper\">";
@@ -333,7 +337,8 @@ class impresscart_admin {
         </script>
         
 		<?php
-
+		
+		
 		return $final_html;
 		
 	}

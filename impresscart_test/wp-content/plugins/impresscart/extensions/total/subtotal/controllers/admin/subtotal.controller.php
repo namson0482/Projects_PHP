@@ -52,6 +52,7 @@ function getNewSetting($data) {
       	}
       	
       	
-      	$this->data['subtotal_order'] = $current_setting['order'];		
+      	$this->data['subtotal_order'] = $current_setting['order'];
+      	$this->data['pages'] = apply_filters('impresscart_administration_pages', array());
 	}
 }
