@@ -7,8 +7,11 @@ Contact: support@impressdev.com
 # separate install function to install.php, to make the plugin access point brighter
 
 function impresscart_install() {
+	
 	impresscart_install_tables();
+	
 	impresscart_install_pages();
+	
 	impresscart_register_roles();
 	
 	update_option( 'impresscart_db_version', ITMARKET_VERSION );
@@ -4576,7 +4579,6 @@ function impresscart_install_pages()
 	
 }
 
-function impresscart_upgrade()
-{
+function impresscart_upgrade() {
 	//TODO
 }

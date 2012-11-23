@@ -244,6 +244,7 @@ class impresscart_admin {
 
 		// fix
 		$fix_clear = "<div class=\"fix-clear\">&nbsp;</div>";
+		
 		// save button
 		if ($save_button_name) {
 			$save_html = "<div class=\"form-button\" style=\"margin: 15px 0;\">";
@@ -286,6 +287,7 @@ class impresscart_admin {
 		}
 
 		// theme tabs html
+		
 		$tabs_html = "<ul>";
 		foreach ($tab_names as $tab_name => $tab_label) {
 			$tabs_html .= "<li><a class=\"removetooltip\" href=\"#tab-{$tab_name}\">{$tab_label}</a></li>";
@@ -296,15 +298,7 @@ class impresscart_admin {
 		$pages = apply_filters('impresscart_administration_pages', array());
 		$temp_menu = Goscom::generateHeader($pages);
 		
-		$menu = '';
 		$final_html = '';
-		$menu .= "
-            <ul class=\"im_option_menu\">
-                <li><a href=\"http://impressthemes.com/blog1/\">Impress Blog</a></li>
-                <li><a href=\"http://impressthemes.com/table-of-contents/\">Manual</a></li>
-                <li><a href=\"http://support.impressthemes.com/\">Support</a></li>
-                <li><a href=\"http://impressthemes.com/affiliates-2/\">Affiliate Program</a></li>
-            </ul>";
 		
 		$final_html .= "" . $temp_menu . "<br> <h2>ImpressCart Settings</h2>" ;
 		$final_html .= "<form action=\"\" method=\"post\" name=\"theme_options_form\" id=\"theme_options_form\" enctype=\"multipart/form-data\">";
@@ -337,8 +331,6 @@ class impresscart_admin {
         </script>
         
 		<?php
-		
-		
 		return $final_html;
 		
 	}

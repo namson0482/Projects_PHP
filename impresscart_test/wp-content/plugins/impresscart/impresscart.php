@@ -38,8 +38,6 @@ define('IMPRESSCART_FRAMEWORK_APP_DIR', IMPRESSCART_PATH . '/framework');
 
 define('IMPRESSCART_DIR_DOWNLOAD', WP_CONTENT_DIR . '/uploads');
 
-//load_plugin_textdomain( 'impressthemes', false, IMPRESSCART_LANGUAGES );
-
 include IMPRESSCART_PATH . '/framework/framework.php';
 include IMPRESSCART_INCLUDE . '/functions.php';
 include IMPRESSCART_INCLUDE . '/ajax-functions.php';
@@ -64,6 +62,9 @@ register_activation_hook( __FILE__, 'activate_impresscart_plugin' );
 endif;
 
 function activate_impresscart_plugin() {
+	
+	//var_dump(get_option('impresscart_installed'));
+	
 	if ( version_compare( get_bloginfo( 'version' ), '3.1', '<' ) ) {
 		deactivate_plugins( basename( __FILE__ ) ); //Deactivate our plugin
 	} else {
