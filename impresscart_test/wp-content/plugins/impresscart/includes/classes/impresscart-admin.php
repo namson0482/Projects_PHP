@@ -286,7 +286,7 @@ class impresscart_admin {
 			$html .= "</div>";
 		}
 
-		// theme tabs html
+		// theme tabs html  - Test
 		
 		$tabs_html = "<ul>";
 		foreach ($tab_names as $tab_name => $tab_label) {
