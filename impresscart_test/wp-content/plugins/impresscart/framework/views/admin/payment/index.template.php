@@ -5,7 +5,7 @@
 	<table class="wp-list-table widefat fixed pages" cellspacing="0">
 		<thead>
 			<tr>
-				<th><?php echo __('Shipping Method');?>
+				<th><?php echo __('Payment Gateways');?>
 				</th>
 			</tr>
 		</thead>
@@ -26,7 +26,7 @@
 		</tbody>
 		<tfoot>
 			<tr>
-				<th><?php echo __('Shipping Method');?>
+				<th><?php echo __('Payment Gateways');?>
 				</th>
 			</tr>
 		</tfoot>
