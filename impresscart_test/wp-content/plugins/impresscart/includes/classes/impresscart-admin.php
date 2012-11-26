@@ -25,6 +25,8 @@ class impresscart_admin {
 	function impresscart_admin() {
 		
 		$this->options_values = $this->get_options();
+		
+
 		$data = array();
 		$data['stock_statuses'] = $this->get_option('stock_status_data');	
 		$data['order_statuses'] = $this->get_option('order_status_data');
@@ -49,6 +51,7 @@ class impresscart_admin {
 		
 		impresscart_options::set_default_data($data);
 		$this->options_settings = impresscart_options::get_impresscart_settings();
+		//var_dump($this->options_settings['Local']);
 		
 		add_action('admin_menu', array(&$this, 'admin_menu'), 9);
 		add_action('admin_init', array(&$this, 'admin_init'));
@@ -445,7 +448,7 @@ class impresscart_admin {
 	 * Save plugin options
 	 */
 	function save_options() {
-		
+		//var_dump($this->options_values);
 		update_option(IMPRESSCART_OPTIONS_NAME, $this->options_values);
 	}
 

@@ -56,7 +56,6 @@ class impresscart_options {
     static function get_impresscart_settings() {
     	
     	$settings = apply_filters('impresscart_settings', array());
-    	
         return $settings;
         
     }
