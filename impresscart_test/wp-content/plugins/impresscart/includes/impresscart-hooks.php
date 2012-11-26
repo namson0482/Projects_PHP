@@ -204,7 +204,6 @@ function impresscart_front_pages()
 }
 
 add_filter('impresscart_settings', 'impresscart_default_settings');
-
 function impresscart_default_settings($settings = array())
 {
 			$settings['Local'] = array(

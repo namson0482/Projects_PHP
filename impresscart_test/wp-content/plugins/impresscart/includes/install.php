@@ -10,11 +10,133 @@ function impresscart_install() {
 	
 	impresscart_install_tables();
 	
-	impresscart_install_pages();
+	$pages_id = impresscart_install_pages();
 	
 	impresscart_register_roles();
 	
 	update_option( 'impresscart_db_version', ITMARKET_VERSION );
+	
+	impresscart_install_adminSettings($pages_id);
+}
+
+function impresscart_install_adminSettings($pages_id) {
+	
+	$option = get_option(IMPRESSCART_OPTIONS_NAME);
+	if($option == false || empty($option)) {
+		$defaults = array(
+				'country' =>  '222' ,
+				'region' =>  '0' ,
+				'language' =>  '1' ,
+				'admin_language' =>  '1' ,
+				'currency' =>  'GBP'  ,
+				'decimal_point' =>  '.' ,
+				'thousand_point' =>  ''  ,
+				'auto_update_currency' =>  '0' ,
+				'length_class' =>  '1'  ,
+				'weight_class' =>  '4' ,
+				'catalog_item_per_page' =>  '' ,
+				'admin_item_per_page' =>  ''  ,
+				'display_price_with_tax' =>  '0' ,
+				'invoice_prefix' =>  '' ,
+				'login_display_price' =>  '0' ,
+				'guest_checkout' =>  '0'  ,
+				'account_terms' =>  'none'  ,
+				'checkout_terms' =>  'none'  ,
+				'affiliate_terms' =>  'none'  ,
+				'affiliate_commission' =>  'none' ,
+				'display_stock' =>  '0' ,
+				'show_out_of_stock' =>  '0' ,
+				'out_of_stock_checkout' =>  '0' ,
+				'out_of_stock_status' =>  '0' ,
+				'order_status' =>  '0' ,
+				'complete_order_status' =>  '0' ,
+				'return_status' =>  '0' ,
+				'allow_reviews' =>  '0' ,
+				'allow_downloads' =>  '0'  ,
+				'allow_upload_file_types' =>  '' ,
+				'themedir' =>  '' ,
+				'display_weight_on_cart_page' =>  '0' ,
+				'mail_method' =>  'phpmail' ,
+				'sender_email' =>  ''  ,
+				'smtp_host' =>  '' ,
+				'smtp_username' =>  '' ,
+				'smtp_password' =>  ''  ,
+				'smtp_port' =>  '' ,
+				'new_order_alert_email' =>  '0' ,
+				'new_account_alert_email' =>  '0' ,
+				'additionals_alert_email' =>  '' ,
+				'enable_ssl' =>  '0' ,
+				'enable_sef' =>  '0' ,
+				'google_analytics_code' =>  '' ,
+				'encryption_key' =>  '' ,
+				'display_errors' =>  '0' ,
+				'log_errors' =>  '0' ,
+				'error_log_filename' =>  'error.txt' ,
+				'order_status_data' =>
+				array (
+						0 =>  'Pending' ,
+						1 =>  'Processing' ,
+						2 =>  'Shipped' ,
+						3 =>  'Complete'  ,
+						4 =>  'Canceled' ,
+						5 =>  'Denied' ,
+						6 =>  'Canceled Reversal' ,
+						7 =>  'Failed' ,
+						8 =>  'Refunded' ,
+						9 =>  'Reversed'  ,
+						10 =>  'Chargeback' ,
+						11 =>  'Expired'  ,
+						12 =>  'Processed' ,
+						13 =>  'Voided' ,
+	
+				) ,
+	
+				'stock_status_data' =>
+				array (
+						0 =>  '2 - 3 Days' ,
+						1 =>  'In Stock' ,
+						2 =>  'Out Of Stock ' ,
+						3 =>  'Pre-Order' ,
+				) ,
+	
+	
+				'return_status_data' =>
+				array (
+						0 =>  'Awaiting Products (Default)' ,
+						1 =>  'Complete' ,
+						2 =>  'Pending' ,
+				),
+				'return_action_data' =>
+				array (
+						0 =>  'Credit Issued' ,
+						1 =>  'Refunded' ,
+						2 =>  'Replacement Sent' ,
+				),
+				'return_reason_data' =>
+				array (
+						0 =>  'Dead On Arrival' ,
+						1 =>  'Faulty please supply details'  ,
+						2 =>  'Order Error' ,
+						3 =>  'Other please supply details' ,
+						4 =>  'Received Wrong Item' ,
+				),
+				'checkout/checkout' =>  $pages_id['checkout'] ,
+				'common/contact' =>  $pages_id['homepage'] ,
+				'checkout/cart' =>  $pages_id['checkout_cart'] ,
+				'common/term' =>  $pages_id['homepage'] ,
+				'common/thanks' =>  $pages_id['homepage'] ,
+				'account/account' =>  $pages_id['account_account'] ,
+				'account/affiliate' =>  $pages_id['homepage'] ,
+				'account/register' =>  $pages_id['account_register'] ,
+				'account/wishlist' =>  $pages_id['account_order'] ,
+				'account/order' =>  $pages_id['account_wishlist'] ,
+				'account/download' =>  $pages_id['account_download'] ,
+				'account/return' =>  $pages_id['account_return'] ,
+				'account/transaction' =>  $pages_id['account_transaction'] ,
+		) ;
+		
+		update_option(IMPRESSCART_OPTIONS_NAME, $defaults);
+	}
 }
 
 function impresscart_install_tables() {
@@ -4433,8 +4555,10 @@ function impresscart_register_roles() {
 	add_role('premium', __('Premium'), $role->capabilities );
 }
 
-function impresscart_install_pages()
-{
+function impresscart_install_pages() {
+	
+	$pages_id = array();
+	
 	$impresscart = array(
 		'post_status' => 'publish', 
 		'post_type' => 'page',		
@@ -4444,7 +4568,11 @@ function impresscart_install_pages()
 		'post_title' => __('Impresscart'), 
 	);
 	
+	
+	
 	$parent_page = wp_insert_post($impresscart);
+	
+	$pages_id['homepage'] = $parent_page;
 	
 	$checkout = array(
 		'post_status' => 'publish', 
@@ -4453,7 +4581,7 @@ function impresscart_install_pages()
 		'post_content' => '[impresscart action="/checkout/checkout"]',
 		'post_title' => __('Checkout'), 
 	);	
-	wp_insert_post($checkout);
+	$pages_id['checkout'] = wp_insert_post($checkout);
 	
 	$shoppingcart = array(
 		'post_status' => 'publish', 
@@ -4463,7 +4591,7 @@ function impresscart_install_pages()
 		'post_title' => __('My Cart'), 
 	);
 	
-	wp_insert_post($shoppingcart);
+	$pages_id['checkout_cart'] =  wp_insert_post($shoppingcart);
 	
 	$myaccount = array(
 		'post_status' => 'publish', 
@@ -4472,8 +4600,7 @@ function impresscart_install_pages()
 		'post_content' => '[impresscart action="/account/account"]',
 		'post_title' => __('My Account'), 
 	);	
-	
-	$account_page = wp_insert_post($myaccount);
+	$pages_id['account_account'] = $account_page = wp_insert_post($myaccount);
 		
 	$register = array(
 		'post_status' => 'publish', 
@@ -4482,7 +4609,7 @@ function impresscart_install_pages()
 		'post_content' => '[impresscart action="/account/register"]',
 		'post_title' => __('Register'), 
 	);	
-	wp_insert_post($register);
+	$pages_id['account_register'] = wp_insert_post($register);
 	
 	$login = array(
 		'post_status' => 'publish', 
@@ -4491,16 +4618,16 @@ function impresscart_install_pages()
 		'post_content' => '[impresscart action="/account/login"]',
 		'post_title' => __('Login'), 
 	);	
-	wp_insert_post($login);
+	$pages_id['account_login'] = wp_insert_post($login);
 	
 	$logout = array(
 		'post_status' => 'publish', 
 		'post_type' => 'page',		
 		'post_parent' => $account_page,
-		'post_content' => '[impresscart action="/account/login"]',
+		'post_content' => '[impresscart action="/account/logout"]',
 		'post_title' => __('Logout'), 
 	);
-	wp_insert_post($logout);
+	$pages_id['account_logout'] = wp_insert_post($logout);
 		
 	$changepassword = array(
 		'post_status' => 'publish', 
@@ -4509,9 +4636,8 @@ function impresscart_install_pages()
 		'post_content' => '[impresscart action="/account/password"]',
 		'post_title' => __('Change Password'), 
 	);	
-	wp_insert_post($changepassword);
-	
-	
+	$pages_id['account_changepassword'] = wp_insert_post($changepassword);
+
 	$address = array(
 		'post_status' => 'publish', 
 		'post_type' => 'page',		
@@ -4519,16 +4645,16 @@ function impresscart_install_pages()
 		'post_content' => '[impresscart action="/account/address"]',
 		'post_title' => __('My Address'), 
 	);	
-	wp_insert_post($address);
+	$pages_id['account_address'] = wp_insert_post($address);
 	
-	$whishlist = array(
+	$wishlist = array(
 		'post_status' => 'publish', 
 		'post_type' => 'page',		
 		'post_parent' => $account_page,
-		'post_content' => '[impresscart action="/account/whishlist"]',
+		'post_content' => '[impresscart action="/account/wishlist"]',
 		'post_title' => __('My Wishlist'), 
 	);	
-	wp_insert_post($whishlist);
+	$pages_id['account_wishlist'] = wp_insert_post($wishlist);
 	
 	
 	$download = array(
@@ -4538,8 +4664,7 @@ function impresscart_install_pages()
 		'post_content' => '[impresscart action="/account/download"]',
 		'post_title' => __('My Downloads'), 
 	);	
-	wp_insert_post($download);
-	
+	$pages_id['account_download'] = wp_insert_post($download);
 	
 	$edit = array(
 		'post_status' => 'publish', 
@@ -4548,7 +4673,7 @@ function impresscart_install_pages()
 		'post_content' => '[impresscart action="/account/edit"]',
 		'post_title' => __('Edit Account'), 
 	);	
-	wp_insert_post($edit);	
+	$pages_id['account_edit'] = wp_insert_post($edit);	
 	
 	$order = array(
 		'post_status' => 'publish', 
@@ -4557,7 +4682,7 @@ function impresscart_install_pages()
 		'post_content' => '[impresscart action="/account/order"]',
 		'post_title' => __('My Orders'), 
 	);	
-	wp_insert_post($order);
+	$pages_id['account_order'] = wp_insert_post($order);
 	
 	$return = array(
 		'post_status' => 'publish', 
@@ -4566,7 +4691,7 @@ function impresscart_install_pages()
 		'post_content' => '[impresscart action="/account/return"]',
 		'post_title' => __('My Returns'), 
 	);	
-	wp_insert_post($return);
+	$pages_id['account_return'] = wp_insert_post($return);
 	
 	$transaction = array(
 		'post_status' => 'publish', 
@@ -4575,7 +4700,9 @@ function impresscart_install_pages()
 		'post_content' => '[impresscart action="/account/transaction"]',
 		'post_title' => __('My Transactions'), 
 	);	
-	wp_insert_post($transaction);
+	$pages_id['account_transaction'] = wp_insert_post($transaction);
+	
+	return $pages_id;
 	
 }
 
