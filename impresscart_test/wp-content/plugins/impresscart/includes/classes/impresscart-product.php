@@ -461,6 +461,108 @@ function impresscart_administration_report_pages($pages) {
 	return $pages;
 }
 
+/**
+ * options
+ */
+add_filter('impresscart_product_options', 'impresscart_product_options_metabox');
+
+function impresscart_product_options_metabox($field = array()) {
+  $html = '';
+  ob_start();
+  impresscart_framework::getInstance()->dispatch('/admin/options/product_options_metabox');
+  $html .= ob_get_contents();
+  ob_end_clean();
+  return $html;
+}
+
+/**
+ * attributes
+ */
+add_filter('impresscart_product_attributes', 'impresscart_product_attributes_metabox');
+
+function impresscart_product_attributes_metabox($field = array()) {
+  $html = '';
+  ob_start();
+  impresscart_framework::getInstance()->dispatch('/admin/attributes/product_attributes_metabox');
+  $html .= ob_get_contents();
+  ob_end_clean();
+  return $html;
+}
+
+/**
+ * general
+ */
+add_filter('impresscart_product_general', 'impresscart_product_general_metabox');
+
+function impresscart_product_general_metabox($field = array()) {
+  $html = '';
+  ob_start();
+  impresscart_framework::getInstance()->dispatch('/admin/attributes/product_general_metabox');
+  impresscart_framework::getInstance()->dispatch('/admin/catalog/product_metabox_download');
+  $html .= ob_get_contents();
+  ob_end_clean();
+  return $html;
+}
+
+/**
+ * discount
+ */
+add_filter('impresscart_product_discount', 'impresscart_product_discount_metabox');
+
+function impresscart_product_discount_metabox($field = array()) {
+  $html = '';
+  ob_start();
+  impresscart_framework::getInstance()->dispatch('/admin/attributes/product_discount_metabox');
+  $html .= ob_get_contents();
+  ob_end_clean();
+  return $html;
+}
+
+/**
+ * special
+ */
+add_filter('impresscart_product_special', 'impresscart_product_special_metabox');
+
+function impresscart_product_special_metabox($field = array()) {
+  $html = '';
+  ob_start();
+  impresscart_framework::getInstance()->dispatch('/admin/attributes/product_special_metabox');
+  $html .= ob_get_contents();
+  ob_end_clean();
+  return $html;
+}
+
+/**
+ * points
+ */
+add_filter('impresscart_product_points', 'impresscart_product_points_metabox');
+
+function impresscart_product_points_metabox($field = array()) {
+  $html = '';
+  ob_start();
+  impresscart_framework::getInstance()->dispatch('/admin/attributes/product_reward_points_metabox');
+  $html .= ob_get_contents();
+  ob_end_clean();
+  
+  
+  return $html;
+}
+
+/**
+ * related
+ */
+  
+add_filter('impresscart_product_related_products', 'impresscart_product_related_products_metabox');
+
+function impresscart_product_related_products_metabox($field = array()) {
+  $html = '';
+  ob_start();
+  impresscart_framework::getInstance()->dispatch('/admin/attributes/product_related_products_metabox');
+  $html .= ob_get_contents();
+  ob_end_clean();
+  return $html;
+}
+
 class impresscart_product extends impresscart_posttype {
 
 	var $id;
@@ -476,118 +578,118 @@ class impresscart_product extends impresscart_posttype {
 	function impresscart_product( $id ) {
 
 		$this->metaboxes = array(
-			'product_data' => array(
-				'id' => 'product-data-meta-box',
-			    'title' => __('Product data'),
-			    'page' => 'post',
-			    'context' => 'normal',
-			    'priority' => 'high',
-				'fields' => '',
-			    'tabs' => array(
-				__('Data') => array(
-				array(
-				    		'name' => '',
-				    		'desc' => 'general box',
-				    		'id'   => @$prefix . 'general',
-				    		'type' => 'product_general',
-				    		'std'  => 'default'
+				'product_data' => array(
+						'id' => 'product-data-meta-box',
+						'title' => __('Product data'),
+						'page' => 'post',
+						'context' => 'normal',
+						'priority' => 'high',
+						'fields' => '',
+						'tabs' => array(
+								__('Data') => array(
+										array(
+												'name' => '',
+												'desc' => 'general box',
+												'id'   => @$prefix . 'general',
+												'type' => 'product_general',
+												'std'  => 'default'
 				    		),
-				    		),
+								),
 
-				    		__('Attributes') => array(
+								__('Attributes') => array(
 
 				    		array(
-				    		'name' => '',
-				    		'desc' => 'attributes box',
-				    		'id'   => @$prefix . 'option',
-				    		'type' => 'product_attributes',
-				    		'std'  => 'default'
+				    				'name' => '',
+				    				'desc' => 'attributes box',
+				    				'id'   => @$prefix . 'option',
+				    				'type' => 'product_attributes',
+				    				'std'  => 'default'
 				    		),
-				    		),
+								),
 
-				    		//similar to attributes tab of woocommerce
-				    		__('Options') => array(
+								//similar to attributes tab of woocommerce
+								__('Options') => array(
 
 				    		array(
-				    		'name' => '',
-				    		'desc' => 'options box',
-				    		'id'   => @$prefix . 'option',
-				    		'type' => 'product_options',
-				    		'std'  => 'default'
+				    				'name' => '',
+				    				'desc' => 'options box',
+				    				'id'   => @$prefix . 'option',
+				    				'type' => 'product_options',
+				    				'std'  => 'default'
 				    		),
 
-				    		),
+								),
 
-				    		__('Discount') => array(
+								__('Discount') => array(
 
 				    		array(
-				    		'name' => '',
-				    		'desc' => 'discount box',
-				    		'id'   => @$prefix . 'discount',
-				    		'type' => 'product_discount',
-				    		'std'  => 'default'
+				    				'name' => '',
+				    				'desc' => 'discount box',
+				    				'id'   => @$prefix . 'discount',
+				    				'type' => 'product_discount',
+				    				'std'  => 'default'
 				    		),
 
-				    		),
+								),
 
-				    		__('Special') => array(
+								__('Special') => array(
 
 				    		array(
-				    		'name' => '',
-				    		'desc' => 'special box',
-				    		'id'   => @$prefix . 'special',
-				    		'type' => 'product_special',
-				    		'std'  => 'default'
+				    				'name' => '',
+				    				'desc' => 'special box',
+				    				'id'   => @$prefix . 'special',
+				    				'type' => 'product_special',
+				    				'std'  => 'default'
 				    		),
 
-				    		),
+								),
 
-				    		__('Related Products') => array(
+								__('Related Products') => array(
 
 				    		array(
-				    		'name' => '',
-				    		'desc' => 'related_product box',
-				    		'id'   => @$prefix . 'related_products',
-				    		'type' => 'product_related_products',
-				    		'std'  => 'default'
+				    				'name' => '',
+				    				'desc' => 'related_product box',
+				    				'id'   => @$prefix . 'related_products',
+				    				'type' => 'product_related_products',
+				    				'std'  => 'default'
 				    		),
 
-				    		),
+								),
 
-				    		__('Reward Points') => array(
+								__('Reward Points') => array(
 
 				    		array(
-				    		'name' => '',
-				    		'desc' => 'points box',
-				    		'id'   => @$prefix . 'points',
-				    		'type' => 'product_points',
-				    		'std'  => 'default'
+				    				'name' => '',
+				    				'desc' => 'points box',
+				    				'id'   => @$prefix . 'points',
+				    				'type' => 'product_points',
+				    				'std'  => 'default'
 				    		),
 
-				    		)
+								)
 
-				    		)
+						)
 
-				    		),
-				    		 
-			'product_image' => array(
-				'id' => 'product-data-meta-box',
-			    'title' => __('Images'),
-				'fields' => array(
-					    		array(
-								'name' => '',
-								'desc' => '',
-								'id'   => @$prefix . 'product_image',
-								'type' => 'product_image',
-								'std'  => ''
+				),
+				 
+				'product_image' => array(
+						'id' => 'product-data-meta-box',
+						'title' => __('Images'),
+						'fields' => array(
+								array(
+										'name' => '',
+										'desc' => '',
+										'id'   => @$prefix . 'product_image',
+										'type' => 'product_image',
+										'std'  => ''
 								),
 						)
 				)
-			);
+		);
 
-			$this->id = $id;
-			$this->product_custom_fields = get_post_custom( $this->id );
-			$default = array(
+		$this->id = $id;
+		$this->product_custom_fields = get_post_custom( $this->id );
+		$default = array(
 				'model' => '',
 				'sku' => '',
 				'price' => '',
@@ -613,14 +715,14 @@ class impresscart_product extends impresscart_posttype {
 				'downloadable' => 'no',
 				'virtual' => 'no',
 				'enabled' => 'yes'
-			);
+		);
 			
-			//var_dump($this->product_custom_fields);
+		//var_dump($this->product_custom_fields);
 
-			foreach($default as $key => $value)
-			{
-				$this->$key = (isset($this->product_custom_fields[$key][0]) && $this->product_custom_fields[$key][0]!=='') ? $this->product_custom_fields[$key][0] : $value;
-			}
+		foreach($default as $key => $value)
+		{
+			$this->$key = (isset($this->product_custom_fields[$key][0]) && $this->product_custom_fields[$key][0]!=='') ? $this->product_custom_fields[$key][0] : $value;
+		}
 	}
 
 	function get($key)
@@ -1068,24 +1170,24 @@ class impresscart_product extends impresscart_posttype {
 
 		// Get the posts
 		$related_posts = get_posts(array(
-			'orderby' 		=> 'rand',
-			'posts_per_page'=> $limit,
-			'post_type' 	=> 'product',
-			'fields' 		=> 'ids',
-			'meta_query' 	=> $meta_query,
-			'tax_query' 	=> array(
-				'relation' => 'OR',
-		array(
-					'taxonomy' 	=> 'product_cat',
-					'field' 	=> 'id',
-					'terms' 	=> $cats_array
-		),
-		array(
-					'taxonomy' 	=> 'product_tag',
-					'field' 	=> 'id',
-					'terms' 	=> $tags_array
-		)
-		)
+				'orderby' 		=> 'rand',
+				'posts_per_page'=> $limit,
+				'post_type' 	=> 'product',
+				'fields' 		=> 'ids',
+				'meta_query' 	=> $meta_query,
+				'tax_query' 	=> array(
+						'relation' => 'OR',
+						array(
+								'taxonomy' 	=> 'product_cat',
+								'field' 	=> 'id',
+								'terms' 	=> $cats_array
+						),
+						array(
+								'taxonomy' 	=> 'product_tag',
+								'field' 	=> 'id',
+								'terms' 	=> $tags_array
+						)
+				)
 		));
 
 		$related_posts = array_diff( $related_posts, array($this->id) );
@@ -1099,9 +1201,9 @@ class impresscart_product extends impresscart_posttype {
 		if (!is_array($this->attributes)) :
 
 		if (isset($this->product_custom_fields['product_attributes'][0]))
-		$this->attributes = maybe_unserialize( maybe_unserialize( $this->product_custom_fields['product_attributes'][0] ));
+			$this->attributes = maybe_unserialize( maybe_unserialize( $this->product_custom_fields['product_attributes'][0] ));
 		else
-		$this->attributes = array();
+			$this->attributes = array();
 
 		endif;
 
@@ -1164,113 +1266,12 @@ class impresscart_product extends impresscart_posttype {
 
 	function save()
 	{
-		//to make sure the terms IDs is integers:		
+		//to make sure the terms IDs is integers:
 		if(@$_POST['product_group']) {
 			$cat_ids = array_map('intval', @$_POST['product_group']);
 			$cat_ids = array_unique( $cat_ids );
 			wp_set_object_terms( $this->id, $cat_ids, 'product_group' );
-		}		
+		}
 	}
 }
 
-/**
- * options
- */
-add_filter('impresscart_product_options', 'impresscart_product_options_metabox');
-
-function impresscart_product_options_metabox($field = array()) {
-  $html = '';
-  ob_start();
-  impresscart_framework::getInstance()->dispatch('/admin/options/product_options_metabox');
-  $html .= ob_get_contents();
-  ob_end_clean();
-  return $html;
-}
-
-/**
- * attributes
- */
-add_filter('impresscart_product_attributes', 'impresscart_product_attributes_metabox');
-
-function impresscart_product_attributes_metabox($field = array()) {
-  $html = '';
-  ob_start();
-  impresscart_framework::getInstance()->dispatch('/admin/attributes/product_attributes_metabox');
-  $html .= ob_get_contents();
-  ob_end_clean();
-  return $html;
-}
-
-/**
- * general
- */
-add_filter('impresscart_product_general', 'impresscart_product_general_metabox');
-
-function impresscart_product_general_metabox($field = array()) {
-  $html = '';
-  ob_start();
-  impresscart_framework::getInstance()->dispatch('/admin/attributes/product_general_metabox');
-  impresscart_framework::getInstance()->dispatch('/admin/catalog/product_metabox_download');
-  $html .= ob_get_contents();
-  ob_end_clean();
-  return $html;
-}
-
-/**
- * discount
- */
-add_filter('impresscart_product_discount', 'impresscart_product_discount_metabox');
-
-function impresscart_product_discount_metabox($field = array()) {
-  $html = '';
-  ob_start();
-  impresscart_framework::getInstance()->dispatch('/admin/attributes/product_discount_metabox');
-  $html .= ob_get_contents();
-  ob_end_clean();
-  return $html;
-}
-
-/**
- * special
- */
-add_filter('impresscart_product_special', 'impresscart_product_special_metabox');
-
-function impresscart_product_special_metabox($field = array()) {
-  $html = '';
-  ob_start();
-  impresscart_framework::getInstance()->dispatch('/admin/attributes/product_special_metabox');
-  $html .= ob_get_contents();
-  ob_end_clean();
-  return $html;
-}
-
-/**
- * points
- */
-add_filter('impresscart_product_points', 'impresscart_product_points_metabox');
-
-function impresscart_product_points_metabox($field = array()) {
-  $html = '';
-  ob_start();
-  impresscart_framework::getInstance()->dispatch('/admin/attributes/product_reward_points_metabox');
-  $html .= ob_get_contents();
-  ob_end_clean();
-  
-  
-  return $html;
-}
-
-/**
- * related
- */
-  
-add_filter('impresscart_product_related_products', 'impresscart_product_related_products_metabox');
-
-function impresscart_product_related_products_metabox($field = array()) {
-  $html = '';
-  ob_start();
-  impresscart_framework::getInstance()->dispatch('/admin/attributes/product_related_products_metabox');
-  $html .= ob_get_contents();
-  ob_end_clean();
-  return $html;
-}
