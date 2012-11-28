@@ -18,8 +18,13 @@ class impresscart_metaboxes {
   function impresscart_add_metaboxes() {
 
     //add_meta_box for product
-    add_meta_box('itmarket-product-data', __('Product Data', 'impressthemes'), array(&$this, 'impresscart_add_metabox'), 'product', 'normal', 'high', array('name' => 'product_data', 'class' => 'impresscart_product', 'tab' => true));
-    add_meta_box('itmarket-product-image', __('Images', 'impressthemes'), array(&$this, 'impresscart_add_metabox'), 'product', 'normal', 'high', array('name' => 'product_image', 'class' => 'impresscart_product'));
+    add_meta_box('itmarket-product-data', __('Product Data', 'impressthemes'), 
+    		array(&$this, 'impresscart_add_metabox'), 'product', 'normal', 'high', 
+    		array('name' => 'product_data', 'class' => 'impresscart_product', 'tab' => true));
+    
+    add_meta_box('itmarket-product-image', __('Images', 'impressthemes'), 
+    		array(&$this, 'impresscart_add_metabox'), 'product', 'normal', 'high', 
+    		array('name' => 'product_image', 'class' => 'impresscart_product'));
 
     //add_meta_box for extension
     add_meta_box('itmarket-extension-setting', __('Setting', 'impressthemes'), array(&$this, 'impresscart_add_metabox'), 'extension', 'normal', 'high', array('name' => 'data', 'class' => 'impresscart_extension'));
@@ -113,11 +118,11 @@ class impresscart_metaboxes {
         $fw->dispatch('/admin/attributes/product_related_products_metabox_save');
         $fw->dispatch('/admin/attributes/product_image_metabox_save');
         $fw->dispatch('/admin/catalog/product_metabox_download_save');
+        
   }
   
 
   function impresscart_save_metaboxes() {
-  	
     global $post;
     switch (@$post->post_type) {
       case 'product':

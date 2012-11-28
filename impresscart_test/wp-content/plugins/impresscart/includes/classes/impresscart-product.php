@@ -570,123 +570,151 @@ class impresscart_product extends impresscart_posttype {
 	var $product_custom_fields;
 	var $metaboxes;
 
+	
+	private function defineProductData() {
+
+		$productData = array(
+				'id' => 'product-data-meta-box',
+				'title' => __('Product data'),
+				'page' => 'post',
+				'context' => 'normal',
+				'priority' => 'high',
+				'fields' => '',
+				'tabs' => array(
+						__('Data') => array(
+								array(
+										'name' => '',
+										'desc' => 'general box',
+										'id'   => @$prefix . 'general',
+										'type' => 'product_general',
+										'std'  => 'default'
+								),
+						),
+				
+						__('Attributes') => array(
+				
+								array(
+										'name' => '',
+										'desc' => 'attributes box',
+										'id'   => @$prefix . 'option',
+										'type' => 'product_attributes',
+										'std'  => 'default'
+								),
+						),
+				
+						//similar to attributes tab of woocommerce
+						__('Options') => array(
+				
+								array(
+										'name' => '',
+										'desc' => 'options box',
+										'id'   => @$prefix . 'option',
+										'type' => 'product_options',
+										'std'  => 'default'
+								),
+				
+						),
+				
+						__('Discount') => array(
+				
+								array(
+										'name' => '',
+										'desc' => 'discount box',
+										'id'   => @$prefix . 'discount',
+										'type' => 'product_discount',
+										'std'  => 'default'
+								),
+				
+						),
+				
+						__('Special') => array(
+				
+								array(
+										'name' => '',
+										'desc' => 'special box',
+										'id'   => @$prefix . 'special',
+										'type' => 'product_special',
+										'std'  => 'default'
+								),
+				
+						),
+				
+						__('Related Products') => array(
+				
+								array(
+										'name' => '',
+										'desc' => 'related_product box',
+										'id'   => @$prefix . 'related_products',
+										'type' => 'product_related_products',
+										'std'  => 'default'
+								),
+				
+						),
+				
+						__('Reward Points') => array(
+				
+								array(
+										'name' => '',
+										'desc' => 'points box',
+										'id'   => @$prefix . 'points',
+										'type' => 'product_points',
+										'std'  => 'default'
+								),
+				
+						)
+				
+				)
+				);			
+		return $productData;
+	}
+	
+	
+	private function defineProductImage() {
+		$productImage = array(
+				'id' => 'product-data-meta-box',
+				'title' => __('Images'),
+				'fields' => array(
+						array(
+								'name' => '',
+								'desc' => '',
+								'id'   => @$prefix . 'product_image',
+								'type' => 'product_image',
+								'std'  => ''
+						),
+				)
+				) ;
+		return $productImage;
+	}
+	
+	
+	private function defineProductGroup() {
+		$productGroup = array(
+				'id' => 'product-data-meta-box',
+				'title' => __('Group'),
+				'fields' => array(
+						array(
+								'name' => '',
+								'desc' => 'attributes box',
+								'id'   => @$prefix . 'option',
+								'type' => 'product_attributes',
+								'std'  => 'default'
+						),
+				)
+		) ;
+		return $productImage;
+	}
+	
 	/**
 	 * Loads all product data from custom fields
 	 *
 	 * @param   int	$id	ID of the product to load
 	 */
-	function impresscart_product( $id ) {
+	function impresscart_product($id) {
 
 		$this->metaboxes = array(
-				'product_data' => array(
-						'id' => 'product-data-meta-box',
-						'title' => __('Product data'),
-						'page' => 'post',
-						'context' => 'normal',
-						'priority' => 'high',
-						'fields' => '',
-						'tabs' => array(
-								__('Data') => array(
-										array(
-												'name' => '',
-												'desc' => 'general box',
-												'id'   => @$prefix . 'general',
-												'type' => 'product_general',
-												'std'  => 'default'
-				    		),
-								),
-
-								__('Attributes') => array(
-
-				    		array(
-				    				'name' => '',
-				    				'desc' => 'attributes box',
-				    				'id'   => @$prefix . 'option',
-				    				'type' => 'product_attributes',
-				    				'std'  => 'default'
-				    		),
-								),
-
-								//similar to attributes tab of woocommerce
-								__('Options') => array(
-
-				    		array(
-				    				'name' => '',
-				    				'desc' => 'options box',
-				    				'id'   => @$prefix . 'option',
-				    				'type' => 'product_options',
-				    				'std'  => 'default'
-				    		),
-
-								),
-
-								__('Discount') => array(
-
-				    		array(
-				    				'name' => '',
-				    				'desc' => 'discount box',
-				    				'id'   => @$prefix . 'discount',
-				    				'type' => 'product_discount',
-				    				'std'  => 'default'
-				    		),
-
-								),
-
-								__('Special') => array(
-
-				    		array(
-				    				'name' => '',
-				    				'desc' => 'special box',
-				    				'id'   => @$prefix . 'special',
-				    				'type' => 'product_special',
-				    				'std'  => 'default'
-				    		),
-
-								),
-
-								__('Related Products') => array(
-
-				    		array(
-				    				'name' => '',
-				    				'desc' => 'related_product box',
-				    				'id'   => @$prefix . 'related_products',
-				    				'type' => 'product_related_products',
-				    				'std'  => 'default'
-				    		),
-
-								),
-
-								__('Reward Points') => array(
-
-				    		array(
-				    				'name' => '',
-				    				'desc' => 'points box',
-				    				'id'   => @$prefix . 'points',
-				    				'type' => 'product_points',
-				    				'std'  => 'default'
-				    		),
-
-								)
-
-						)
-
-				),
-				 
-				'product_image' => array(
-						'id' => 'product-data-meta-box',
-						'title' => __('Images'),
-						'fields' => array(
-								array(
-										'name' => '',
-										'desc' => '',
-										'id'   => @$prefix . 'product_image',
-										'type' => 'product_image',
-										'std'  => ''
-								),
-						)
-				)
+				'product_data' => $this->defineProductData(),
+				'product_image' => $this->defineProductImage() 
 		);
-
 		$this->id = $id;
 		$this->product_custom_fields = get_post_custom( $this->id );
 		$default = array(
@@ -717,11 +745,9 @@ class impresscart_product extends impresscart_posttype {
 				'enabled' => 'yes'
 		);
 			
-		//var_dump($this->product_custom_fields);
-
-		foreach($default as $key => $value)
-		{
-			$this->$key = (isset($this->product_custom_fields[$key][0]) && $this->product_custom_fields[$key][0]!=='') ? $this->product_custom_fields[$key][0] : $value;
+		foreach($default as $key => $value) {
+			$this->$key = (isset($this->product_custom_fields[$key][0]) && $this->product_custom_fields[$key][0]!=='') ? 
+							$this->product_custom_fields[$key][0] : $value;
 		}
 	}
 
